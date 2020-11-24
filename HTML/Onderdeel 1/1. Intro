@@ -1,0 +1,101 @@
+Intro.
+
+1.) Wat is het verschil tussen het internet en het World Wide Web (WWW)?
+  
+Het internet is het digitale netwerk waarop de meeste computers aangesloten zijn. 
+Daarbij moet je denken aan de kabels, de glasvezels, de netwerkapparatuur, de communicatiesatellieten.
+Daar kun je van alles overheen sturen. Www is een toepassing die daar gebruik van maakt. E-mail gaat ook over het internet en dat is geen www. Ook internettelefonie (bv. Skype) is geen www. En zo zijn er nog heel wat te noemen.
+Www is alleen maar de manier om webpagina's via links met elkaar te koppelen. Al wordt www vaak HET internet genoemd maar dat is eigenlijk fout.
+Dus: internet is het fysieke netwerk en www is één van de toepassingen die je er overheen stuurt.
+
+
+2.) Wat is het verschil tussen HTML, CSS en JavaScript?
+
+-HTML zou als de fundering en structuur van een huis gezien kunnen worden.
+ in theorie zou dit voldoende moeten zijn om een website te maken, echter zou deze statisch weergeven worden.
+
+-CSS Bepaalt hoe de HTML van een webpagina wordt weergeven.
+ deze omvat dus de opmaak en indeling van je website. 
+ CSS maakt gebruik van selectors en declaraties om terugkerende elementen te vorm te geven.
+
+deze zou gezien kunnen worden als het schilderwerk en het meubilair van de woning.
+
+-JavaScript is een programmeertaal voor het digitale web.
+ Dankzij JavaScript kunnen we HTML en CSS dynamisch maken.
+ Met JavaScript kunnen we een website interactief maken, berekeningen maken en data valideren.
+
+IN de vergelijking van het huis kunnen we JavaScript als de techniek omschrijven die het huis bevat.
+
+
+3.) Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit
+je een HTML tag? Maak hiervoor voorbeelden en leg uit.
+
+HTML bestaat uit een series van elementen die ingesloten kunnen worden door het gebruiken van tags.
+voorbeeld:
+<p>My cat is very grumpy</p>
+-hier worden de tags met; <p></p> weergeven.
+-de content is de zin op zich zelf.
+-het element bestaat uit geheel tags+content.
+
+
+4.) HTML gebruikt basis tags om structuur op te bouwen. De <html>, <head> en <body>.
+Geef voor elke element aan waarvoor het dient.
+
+Dit is de autonomy van het een HTML document.
+-Het HTML element omvat de gehele content van de pagina ook wel Root element.
+-Head element fungeert als een container voor alles wat je wilt bijsluiten, keywords, page description etc.wordt niet altijd weergeven
+-body element alle content die wordt weergeven op het scherm, text, images, video, games playable audio etc.
+
+
+5.) Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.
+
+attributen bevatten extra informatie over elemeneten die niet worden gedisplayed.
+
+-href specifies the web address for the link bijv: href="https://www.mozilla.org/".
+-title specifies extra informatie over the link. zoals een omschrijving bijv: title="The Mozilla homepage".
+-img is voor een image.
+-src is het pad waar de image te vinden is.
+-alt is voor een alternatief voor img als deze niet kan worden weergeven wegens, error, trage conect, etc.
+
+
+6.) Waarom is een goede HTML Structuur belangrijk?
+
+Overzicht, optimale prestatie, efficiency
+
+het voorbeeld uit de vraag, weergeeft een goede html code, de opbouw is solide, echter is de content in de Body element
+niet voorzien van tags waardoor deze geen structuur bevat.
+
+
+7.) Wat is het verschil tussen inline en block elementen?
+
+Block level element: A block-level element always starts on a new line and takes up the full width available 
+(stretches out to the left and right as far as it can).
+address, div, footer, main, section als voorbeelden.
+
+inline Elements: An inline element does not start on a new line and it only takes up as much width as necessary.
+<span>Hello World</span> 
+This is an inline span Hello World element inside a paragraph.
+
+8.) Wat betekent nesting? Codeer een voorbeeld met nesting erin.
+https://www.lifewire.com/nesting-html-tags-3466475#:~:text=Correctly%20nesting%20HTML%20tags%20prevents%20HTML%20errors&text=If%20you%20look%20at%20the,to%20building%20any%20webpage%20today.
+
+Gemakkelijk begrip is om de HTML tags als boxes te zien met content erin.
+dit kan verschillen van text tot aan img etc.
+In sommige gevallen kun je in deze boxes andere boxes plaatsen.( dit om bepaalde toevoeginen aan te geven.)
+voorbeeld: <p>Example: This is a sentence of text.</p>
+voorbeeld2: <p>Example: This is a <strong>sentence</strong> of text.</p>
+
+voorbeeld 2 bevat een 2e box om het woord sentence in dikke letters te weergeven.
+
+
+
+
+
+
+
+
+
+
+
+

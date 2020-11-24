@@ -1,0 +1,89 @@
+Semantics
+
+9.) Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat
+wordt er bedoeld met HTML semantics? Waarom is het gebruik van
+semantics belangrijk? zie https://html.com/semantic-markup/
+
+According to Dictionary.com, semantics refers to the correct interpretation of the meaning of a word or sentence.
+To use a word semantically is to use it in a way that is properly aligned with the meaning of the word. 
+When we misuse a word we are not using it semantically.
+
+Many HTML tags have semantic meaning. That is, 
+the element itself conveys some information about the type of content contained between the opening and closing tags.
+
+Note!
+1. Semantic markup requires that HTML elements be used according to their intended purpose.
+2. Semantic markup requires the separation of content and presentation.
+
+When writing semantic markup, we use HTML tags to tell browsers something about the contents of the element. 
+In semantic markup, tags are no longer just a way to get content to show up on a web page in a human-readable format.
+
+The tags themselves become a way to tell a machine (whether a browser, a computer, a smartphone, or another smart device) something about the meaning of the content.
+To write semantic markup, we must use HTML tags correctly so that our markup is both human-readable and machine-readable.
+
+
+
+10.) 10.Wat voor content zou je in de volgende elementen gebruiken?
+Geef in je antwoord voor elk element een toelichting.
+https://www.w3schools.com/tags/tag_header.asp
+
+<header> 
+container die introductie content bevat of navigatie links.
+1 of meerdere heading elementen
+logo of icoon
+autheurs information
+Note! Header kan niet gebruikt worden in footer of address
+
+<footer> 
+defineert een footer voor een document of sectie.
+-autheurs
+-copyrechten
+-contact information
+-sitemap
+
+<main> 
+specifeert inhoudelijk de hoofdzaken in van het document.
+niet meer als 1 main gebruiken, en informatie die uniek is in zijn soort.
+
+<nav> 
+geeft de navigatie links aan.
+niet alle links moeten hierin geplaatst worden alleen bedoelt voor de grotere/hoofd blokken
+van navigatie links.
+
+<section> 
+verdeelt het document in sectie. of "paragraaf"
+
+<aside> 
+dit element plaatst content buiten het content waar het in geplaatst is.
+p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<article>
+
+deze tag specifeert onafhankelijk, zelf bevattend content materiaal.
+Google chrome
+adghsjkdghskjh
+
+Mozilla
+gahgkjshdkg
+
+Microsoft
+jkhgdjkhdsjkhg
+
+vaak gebruikt bij blogs, forums, of nieuws (headlines)
+
+
+
+
+
+
+
+
+
+
+
+
+
