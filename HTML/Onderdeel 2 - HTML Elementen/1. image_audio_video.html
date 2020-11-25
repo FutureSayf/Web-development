@@ -1,0 +1,189 @@
+<!--Opdrachten
+
+Image, audio & video
+Het plaatsen van foto's op een website is een belangrijke toevoeging voor velen. Zo
+bestaan de meeste websites uit een grote collectie van foto's. Vaak kun je logo's,
+teamfoto's of andere soorten afbeeldingen terugvinden op een website. Het stylen
+van de afbeeldingen komt later in het onderdeel CSS aanbod.
+
+
+1.) 
+
+Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+bestand aan te geven. Dit kan op 2 manieren:
+● Absolute path
+● Relative path
+
+Wat houden deze 2 paths in?
+https://www.w3schools.com/html/html_filepaths.asp
+https://www.keycdn.com/blog/relative-path
+
+●Absolute paths contain a complete URL, which includes a protocol, 
+the website's domain name and possibly a specific file, subfolder, or page name. For example:
+<a href="https://trends.google.com/trends/">Google Trends</a>
+
+●a relative link only includes the name of a specific file or page, which is relative, to the current path. 
+If you keep all of your website's files in a single directory, you can establish links between pages as follows:
+<a href="page2.html">Next page</a>
+<img src="../images/picture.jpg" alt="Mountain"> (zelfde root alleen 1 niveau omhoog ../)
+
+
+2.)
+
+Een image element is voor het inladen van een afbeelding. Afbeeldingen kunnen van
+verschillende formaat zijn. Bijvoorbeeld, een afbeelding kan een JPG formaat zijn.
+. Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+https://www.sitepoint.com/gif-png-jpg-which-one-to-use/
+https://99designs.nl/blog/tips/image-file-types/
+
+
+● JPG, GIF, PNG, TIFF, RAW, PSD
+
+Raster images are made up of a set grid of dots called pixels where each pixel is assigned a color. 
+Unlike a vector image, raster images are resolution dependent, meaning they exist at one size. 
+When you transform a raster image, you stretch the pixels themselves, which can result in a “pixelated” or blurry image. 
+When you enlarge an image, your software is essentially guessing at what image data is missing based on the surrounding pixels. 
+More often than not, the results aren’t great. bron 99 designs.
+
+
+3.)
+
+Een afbeelding tonen is afhankelijk van of de browser het ondersteunt.
+Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
+
+https://caniuse.com/?search=img
+Internet expl, Chrome, Mozilla firefox, Safari, Opera, Knoqueror, Lynx
+
+
+4.)
+
+Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven
+en onderaan je website door zowel gebruik te maken van de absolute path en
+relative path.
+https://www.w3schools.com/html/html_filepaths.asp
+https://www.w3schools.com/html/html_images.asp
+-->
+
+
+<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://techgrounds.nl/wp-content/uploads/2020/10/cropped-TG_Logo.d5934b2d-1-300x53.png">
+    <h1>Mijn eerste website</h1>
+    <p>Click Play to Be Blown Away</p>
+    <audio controls loop>
+        <source src="/Web-development/Sources/Copy of explosie.mp3">
+    </audio>
+    
+    <h2>Mijn eerste sub-kop</h2><p>Video courtesy of TechGrounds</p>
+    <video width="400" controls>
+        <source src="/Web-development/Sources/TechGrounds TechConnect lancering in Amsterdam.mp4">
+    </video>
+
+    <h3>Mijn tweede sub-kop</h3><p>This is a paragraph.</p><p>And this is a paragraph aswell.</p>
+    <hr><h4>Footer</h4><p>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/" target="_blank">Techgrounds Acadamy</a></p>
+    <img src="/Web-development/Sources/TechGround.png" alt="Techgrounds_logo">
+    
+    
+</body>
+</html>
+
+<hr>
+<!--
+
+5.)
+
+Aan de img element kan je ook de alt attribute gebruiken.
+Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te
+gebruiken?
+https://www.w3schools.com/tags/att_img_alt.asp
+
+Wanneer een Img niet gedisplayed kan worden door wat voor technische reden dan ook, fungeert het alt attribute als een omschrijving.
+
+
+6.)
+
+https://www.w3schools.com/html/html5_audio.asp
+https://www.w3schools.com/tags/ref_av_dom.asp
+
+
+In de sound folder staat een explosion.mp3 bestand.
+Laadt dit bestand in als een audio op het scherm.
+Extra: Maak het leuker door de audio op repeat te zetten.
+https://www.w3schools.com/tags/att_audio_loop.asp
+
+
+Tip: gebruik controls attribute om audio af te spelen.
+Een audio bestand heeft verschillende formaten. Niet alle formaten worden
+ondersteund door de browser. Hiervoor is een oplossing voor.
+
+-Browsers don't all support the same file types and audio codecs; you can provide multiple sources inside nested <source> elements,
+ and the browser will then use the first one it
+
+-Door gebruik te maken van de Source tag, kunner er meerdere bronnen geselecteerd worden die afzonderlijk ingesteld zijn.
+
+7.)
+
+https://www.w3schools.com/tags/tag_audio.asp
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+
+Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel
+van is.
+
+Met de audio tag kan het bestand afzonderlijk geconfigured worden.
+
+8.)
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content
+https://www.w3schools.com/html/html5_video.asp
+
+
+Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
+als een video op het scherm.
+
+Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut je voor de
+video element kan gebruiken om de grootte van de video aan te passen.
+(width element)
+
+Een video bestand heeft verschillende formaten. Niet alle formaten worden
+ondersteund door de browser. Hiervoor is een oplossing voor.
+
+Speel een video bestand af met <source> tag. Leg uit wat hier het voordeel van is.
+    -Browsers don't all support the same file types and audio codecs; you can provide multiple sources inside nested <source> elements,
+ and the browser will then use the first one it
+
+-Door gebruik te maken van de Source tag, kunner er meerdere bronnen geselecteerd worden die afzonderlijk ingesteld zijn.
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
