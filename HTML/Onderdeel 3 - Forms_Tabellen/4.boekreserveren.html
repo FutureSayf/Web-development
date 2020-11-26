@@ -1,0 +1,92 @@
+<!--
+
+8.)
+
+Maak een reserverings formulier om een boek te reserveren. In dit formulier
+willen we graag het volgende weten:
+
+https://www.w3schools.com/tags/tag_select.asp#:~:text=The%20element%20is%20used,down%20list%20will%20be%20submitted)
+https://www.w3schools.com/tags/tag_select.asp#:~:text=The%20element%20is%20used,down%20list%20will%20be%20submitted)
+https://www.w3schools.com/tags/tag_fieldset.asp
+https://www.w3schools.com/tags/tag_legend.asp
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
+
+
+
+
+● Naam van dat persoon                                                              x
+● Telefoonnummer                                                                    x
+● E-mail van dat persoon                                                            x
+● Naam van dat boek
+● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5 zijn.
+● Een submit knop
+
+9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset style="background-color: rgb(124, 151, 168); width: 600px; height: 450px;">
+            <legend>Reserveringsformulier Bibliotheek</legend>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" id="achternaam" name="achternaam"><br><br>
+            
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" name="voornaam"><br><br>
+
+            <label for="telefoonnummer">Telefoon:</label>
+            <input type="text" id="telefoonnummer" name="telefoonnummer"><br><br>
+            
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum"><br><br>
+
+            <label for="male">M:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">V:</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <label for="lidmaatschap">Lidmaatschap:</label>
+            <select name="lidmaatschap" id="lidmaatschap">
+            <option value="ja">Ja</option>
+            <option value="nee">Nee</option>
+            </select><br><br>
+
+            <label for="email">email adres:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="boeknaam">Titel boek:</label>
+            <input type="text" id="boeknaam" name="boeknaam"><br><br>
+
+            <label for="aantalboeken">Aantal boeken:</label>
+            <select name="aantalboeken" id="aantalboeken">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select><br><br>
+
+            <label for="akkoord">Uw gaat akkoord met de voorwaardes:</label>
+            <select name="akkoord" id="akkoord">
+            <option value="ja">Ja</option>
+            <option value="nee">Nee</option></select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset"><br>
+
+            
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

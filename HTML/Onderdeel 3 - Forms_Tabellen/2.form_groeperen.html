@@ -1,0 +1,85 @@
+<!--
+4.)
+
+Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:
+https://www.w3schools.com/tags/tag_fieldset.asp
+https://www.w3schools.com/tags/tag_legend.asp
+
+
+Persoons gegevens   x
+achternaam(br)      x
+voornaam(br)        x
+geboortedatum(br)   x
+radio M: V:         x
+postcode:           x
+adres:              x
+submit reset        x
+
+
+5.)
+https://www.w3schools.com/tags/tag_select.asp#:~:text=The%20element%20is%20used,down%20list%20will%20be%20submitted).
+
+Naast input element heb je ook een select element. Hiermee kan je een
+dropdown list maken. Maak een drop down list.
+
+Antwoord zie onderstaand toegevoegd dropdownlist: geslacht.
+
+
+6.)
+
+We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+waar je in kan gebruiken en leg dat uit?
+
+Antwoord: deze opties zijn goed te gebruiken voor een formulier voor NAW gegevens.
+hier heeft de gebruiker keuze uit verschillende opties, e/o effiency. eventuele spelfouten kunnen uit het formulier gehaald worden. 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset style="background-color: rgb(218, 218, 218); width: 500px;">
+            <legend>Persoons gegevens</legend>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" id="achternaam" name="achternaam"><br><br>
+            
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" name="voornaam"><br><br>
+            
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum"><br><br>
+
+            <label for="male">M:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">V:</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <label for="geslacht">Geslacht:</label>
+            <select name="geslacht" id="geslacht">
+            <option value="man">Man</option>
+            <option value="vrouw">Vrouw</option>
+            <option value="anders">Anders</option>
+            </select><input type="submit" value="Submit"><br><br>
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode"><br><br>
+
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres" name="adres"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset">
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

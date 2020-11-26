@@ -1,0 +1,104 @@
+<!--HTML Forms
+
+HTML formulieren zijn de belangrijkste schakel tussen een gebruiker en een website
+of een applicatie. Zij laten gebruikers toe gegevens naar websites te sturen. Meestal
+zal dat naar de server zijn maar een webpagina kan de gegevens ook zelf
+interpreteren.
+Een HTML form bestaat uit een aantal elementen. Bijvoorbeeld textfields (bestaande
+uit één of meerdere regels), choices of buttons.
+
+1.)
+
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/html/html_form_elements.asp
+https://www.w3schools.com/html/html_form_attributes_form.asp
+https://www.tutorialspoint.com/html/html_forms.htm
+
+
+
+
+Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+vullen. Zie hieronder voor een voorbeeld:
+
+2.)
+
+Naast input text fields zijn er ook nog andere input fields. Zoals:
+https://www.w3schools.com/html/html_form_input_types.asp
+https://www.w3schools.com/html/html_form_attributes.asp
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_hidden
+
+
+
+
+● radiobutton   x
+● checkbox      x
+● password      x
+● reset         x
+● submit        x
+● date          x
+● search        x
+● time          x
+● hidden        x
+● email         x
+
+3.)
+
+Maak een input email field met een submit knop.
+tip: wat gebeurt er wanneer je op de submit knop clickt met een random text?
+ Antwoord: Er wordt aangegeven dat je @ moet gebruiken in je adress.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Submit"><br><br>
+
+        <label for="achternaam">Achternaam:</label> 
+        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"><br>
+        <br><input type="hidden" id="custId" name="custId" value="3487">
+        
+        <label for="voornaam">voornaam:</label> 
+        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam"><br><br>
+        
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="checkbox" id="female" name="gender" value="woman">
+        <label for="woman"> I am a woman</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        
+        <label for="date_of_birth">Date of birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth">
+        <input type="submit" value="Submit"><br><br>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <input type="submit" value="Submit"><br><br>
+
+        
+
+        <input type="submit" value="Submit">
+        <input type="reset"><br><br>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Submit">
+    </form>  
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!--
+
+7.)
+
+Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+willen we graag het volgende weten:
+
+https://www.w3schools.com/tags/tag_select.asp#:~:text=The%20element%20is%20used,down%20list%20will%20be%20submitted)
+https://www.w3schools.com/tags/tag_select.asp#:~:text=The%20element%20is%20used,down%20list%20will%20be%20submitted)
+https://www.w3schools.com/tags/tag_fieldset.asp
+https://www.w3schools.com/tags/tag_legend.asp
+
+
+● Naam van dat persoon                                                              x
+● Off hij/zij lidmaatschap heeft                                                    x
+● E-mail van dat persoon                                                            x
+● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash          x
+● Datum en tijdstip om te reserveren                                                x
+● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings voorwaardes   x
+● Een submit knop                                                                   x
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset style="background-color: rgb(155, 191, 194); width: 600px; height: 400px;">
+            <legend>reserveringsformulier</legend>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" id="achternaam" name="achternaam"><br><br>
+            
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" id="voornaam" name="voornaam"><br><br>
+            
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum"><br><br>
+
+            <label for="male">M:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">V:</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <label for="lidmaatschap">Lidmaatschap:</label>
+            <select name="lidmaatschap" id="lidmaatschap">
+            <option value="ja">Ja</option>
+            <option value="nee">Nee</option>
+            </select><br><br>
+
+            <label for="email">email adres:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="typesport">Type sport:</label>
+            <select name="typesport" id="typesport">
+            <option value="tafeltennis">Tafeltennis</option>
+            <option value="badminton">Badminton</option>
+            <option value="Squash">Squash</option>
+            </select><br><br>
+
+            <label for="appt">Reserveer uw tijdslot:</label>
+            <input type="time" id="appt" name="appt">
+            <br><br>
+
+            <label for="akkoord">Uw gaat akkoord met de voorwaardes:</label>
+            <select name="akkoord" id="akkoord">
+            <option value="ja">Ja</option>
+            <option value="nee">Nee</option></select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset"><br>
+
+            
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!--
+
+    HTML tables
+
+https://www.w3schools.com/html/html_tables.asp
+
+
+Om een tabel te maken heb je volgende elementen nodig:
+● <table> - element to define a table.
+● <thead> - Groups the header content in a table 
+● <tbody> - Groups the body content in a table
+● <tfoot> - Groups the footer content in a table
+● <th>    - Defines a header cell in a table / element to define a table heading
+● <tr>    - Defines a row in a table/ element to define a table row
+● <td>    - Defines a cell in a table/ element to define a table data
+    
+*Use the colspan attribute to make a cell span many columns
+*Use the rowspan attribute to make a cell span many rows
+
+Geef voor elke element een definitie.
+
+*The <td> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+
+13.)
+
+Voor het maken van een tabel kan je ook gebruik maken van colspan en
+rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet
+het volgende:
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="background-color: rgb(165, 194, 194);">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Sport</th>
+                <th>x Recreanten</th>
+                <th>x competitie spelers</th>
+                <th>Totaal Deelnemers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Racket Sport</td>
+                <td>Badminton</td>
+                <td>10</td>
+                <td>30</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                
+                <td>Tafeltennis</td>
+                <td>59</td>
+                <td>30</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Tennis</td>
+                <td>159</td>
+                <td>130</td>
+                <td>189</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Ball Sport</td>
+                <td>Voetbal</td>
+                <td>88</td>
+                <td>40</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>Basketbal</td>
+                <td>60</td>
+                <td>40</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Volleybal</td>
+                <td>35</td>
+                <td>20</td>
+                <td>55</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
