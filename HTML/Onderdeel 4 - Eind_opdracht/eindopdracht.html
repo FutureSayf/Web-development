@@ -1,0 +1,105 @@
+<!--
+https://www.w3schools.com/tags/tag_div.ASP
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_div_test
+
+A <div> section in a document that is styled with CSS:
+
+The <div> tag defines a division or a section in an HTML document.
+The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+The <div> tag is easily styled by using the class or id attribute.
+
+Any sort of content can be put inside the <div> tag! 
+Note: By default, browsers always place a line break before and after the <div> element.
+
+CLASSES
+
+https://www.w3schools.com/html/html_classes.asp
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_css
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_multiple
+
+Chapter Summary
+-The HTML class attribute specifies one or more class names for an element
+-Classes are used by CSS and JavaScript to select and access specific elements
+-The class attribute can be used on any HTML element
+-The class name is case sensitive
+-Different HTML elements can point to the same class name
+-JavaScript can access elements with a specific class name with the getElementsByClassName() method
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test
+
+https://www.geeksforgeeks.org/how-to-float-three-div-side-by-side-using-css/
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{text-align: center;}
+        .white{background-color: rgb(233, 223, 223); width: 450px; height: 220px;}
+        .text{text-align: center; width: 150px; float: right;}
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(212, 205, 205);">
+        
+        <div>
+            <h1 class="main">Menu</h1>
+            <p class="main">Unique wood pizzas or be tempred by our pasta, antipasta, focaccias etc..etc..</p>
+        </div>
+            
+        <div class="white">
+            <img src="/Web-development/Sources/pizza1.jpg" alt="Pizza1" width="250px">
+                <div class="text">
+                    <h2>Orignal</h2>
+                    <p>Tomato sauce, mozzorella</p><br>
+                    <p>$18.00</p>
+                    <button type="button" onclick="alert('You just orderd delicious Pizza!')" style="background-color: rgb(191, 212, 190);">ADD TO CHART</button>
+                </div>
+        </div><br>
+
+        <div class="white">
+            <img src="/Web-development/Sources/pizza2.jpg" alt="Pizza2" width="250px">
+                <div class="text">
+                    <h2>Meatlovers</h2>
+                    <p>Tomato sauce, mozzorella</p><br>
+                    <p>$18.00</p>
+                    <button type="button" onclick="alert('You just orderd delicious Pizza!')" style="background-color: rgb(191, 212, 190);">ADD TO CHART</button>
+                </div>
+        </div><br>
+
+        <div class="white">
+            <img src="/Web-development/Sources/pizza3.jpg" alt="Pizza3" width="250px">
+                <div class="text">
+                    <h2>Pollo</h2>
+                    <p>Tomato sauce, mozzorella</p><br>
+                    <p>$18.00</p>
+                    <button type="button" onclick="alert('You just orderd delicious Pizza!')" style="background-color: rgb(191, 212, 190);">ADD TO CHART</button>
+                </div>
+        </div><br>
+
+        <div class="white">
+            <img src="/Web-development/Sources/pizza4.jpg" alt="Pizza4" width="250px">
+                <div class="text">
+                    <h2>Hawaiian</h2>
+                    <p>Tomato sauce, mozzorella</p><br>
+                    <p>$18.00</p>
+                    <button type="button" onclick="alert('You just orderd delicious Pizza!')" style="background-color: rgb(191, 212, 190);">ADD TO CHART</button>
+                </div>
+        </div><br>
+        
+       
+
+
+    </div>
+  
+    
+</body>
+</html>
