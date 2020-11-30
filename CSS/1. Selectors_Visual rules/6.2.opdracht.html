@@ -1,11 +1,55 @@
+<!--
+https://css-tricks.com/child-and-sibling-selectors/
+Adjacent selectors.
+
+Een mannier om 2 selectoren de combineren.
+(+) adjacent combinator.
+selecteert elke paragraaf tag na een paragraag tag zonder spaties er tussen.
+of zoals hier onder div + p = selecteer elke paragraaf na een div.
+
+andere voobeelden:
+p + p { font-size: smaller; } /* Selects all paragraphs that follow another paragraph */
+#title + ul { margin-top: 0; } /* Selects an unordered list that directly follows the element with ID title */
+
+VOORDELEN:
+These selectors can help you apply styling in a contextual way. 
+Perhaps you have a bunch of articles on a site. Most of them start with <p> elements and it looks great. 
+But some of them start with a <ul>, which have top and bottom margin on your site to look good within an article. 
+But when they start an article it causes an awkward gap. The latter selector above would zero out that top margin 
+when it begins an article (immediately succeeds a title).
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adjacent selectors</title>
+
+    <style>
+        p + p {color: green;}
+        div + p {color: hotpink;}
+    </style>
+
 </head>
 <body>
+    <div>
+        <p>Line One</p>
+        <p>Line Two</p>
+        <div>Box</div>
+        <p>Line Three</p>
+    </div>
+<hr>    
+    <div>
+        <p>I'm a paragraph</p>
+        <p>I get selected!</p>
+      </div>
+      
+      <div>
+        <p>I'm a paragraph</p>
+        <h2>Monkey hair</h2>
+        <p>I will NOT get selected</p>
+      </div>
     
 </body>
 </html>

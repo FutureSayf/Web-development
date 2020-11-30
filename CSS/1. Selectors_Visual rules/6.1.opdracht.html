@@ -1,11 +1,43 @@
+<!--
+Child selectors
+
+seleceteren alleen items die direct verwand zijn van een lijst.
+zie voorbeeld hieronder direct verwand van OL orderd list zijn alle LI's.
+de Li's die onder UL komen zijn niet direct verwand.
+
+ol li : is een voorbeeld van descendant dit neemt alle verwanten na de Li dus ook de li's onder de ul.
+
+VOORDELEN:
+
+I think the nested list is a perfect example of why this selector is useful. 
+It can be thought of as a way to prevent styling from cascading down further than you would like it to. 
+Maybe you want to make the outer-most list items large and header-like, but the nested lists smaller and more body-copy like. 
+Using a child combinator you can select only those top level list items and not worry about the large/header 
+styling cascading down to the nested lists and having to fight against that styling.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>child selectors</title>
+
+    <style>
+        ol > li {color: green;}
+    </style>
+
 </head>
 <body>
+    <ol>
+        <li>Numbered list item 1</li>
+        <li>Numbered list item 2</li>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+        <li>Numbered list item 3</li>
+      </ol>
     
 </body>
 </html>

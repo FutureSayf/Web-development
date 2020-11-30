@@ -1,11 +1,49 @@
+<!--
+General Selectors
+https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator
+https://css-tricks.com/child-and-sibling-selectors/
+
+The general sibling combinator (~) separates two selectors and matches all iterations of the second element, 
+that are following the first element (though not necessarily immediately), 
+and are children of the same parent element.
+
+former_element ~ target_element { style properties }
+
+
+Als p ~ p = ook line 2 uit de eerste div.
+
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adjacent selectorst</title>
+    <title>General selectors</title>
+<style>
+    div ~ p { color: hotpink;}
+
+</style>
+
 </head>
 <body>
+
+    <div>
+        <p>Line One</p>
+        <p>Line Two</p>
+        <div>Box</div>
+        <p>Line Three</p>
+        <p>Line four</p>
+        <p>Line Three</p>
+        <p>Line four</p>
+    </div>
+<hr> 
+   
     
 </body>
-</html>
+</html><br>
+
+<hr>
+
