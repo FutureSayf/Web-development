@@ -1,0 +1,102 @@
+<!--
+
+Opdracht 3.)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors
+http://www.codecenter.nl/pr/code/html/css#:~:text=Stijlen%20kunnen%20op%203%20verschillende,de%20head%20van%20het%20document.
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#Type_selectors
+
+https://www.w3.org/TR/selectors-3/#descendant-combinators
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+
+
+
+
+Er zijn verschillende selectors, bijvoorbeeld;
+- type selectors
+- descendant selectors
+- class selectors
+
+Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de voordelen zijn van elke selector.
+
+- type selectors
+----------------------
+
+A type selector is sometimes referred to as a tag name selector or element selector 
+because it selects an HTML tag/element in your document.
+<h1>Type selectors</h1>
+<p>voorbeeld text <span>deze text is aangepast volgens attribuut span </span>   voorbeeld text .</p>
+
+VOODELEN:
+configuraties doorvoeren voor een bepaald type.
+bijv.
+<div> in je style rubriek.
+    nu kun je middels type selector <div> configureren. bijv back ground collor veranderen.
+.
+
+-descendant selectors
+------------------------------
+https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element
+https://www.w3schools.com/css/css_combinators.asp
+
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+
+- descendant selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
+
+The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements: 
+<style>
+div p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Descendant Selector</h2>
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+VOORDELEN:
+Alle properties in een bepaalde element veranderen doormiddel van descendants.
+bijv. alle <p> in een <div> geel maken.
+------------------------------------
+
+
+-class selectors
+---------------------------------
+
+The class selector starts with a dot (.) character. 
+It will select everything in the document with that class applied to it. 
+In the live example below we have created a class called highlight, and have applied it to several places in my document. 
+All of the elements that have the class applied are highlighted.
+.highlight {
+    background-color: yellow;
+}
+
+<h1 class="highlight">Class selectors</h1>
+
+VOORDELEN:
+CLASSES GROUPEREN MET STYLE. meerdere configuraties
+
+-->
