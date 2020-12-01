@@ -1,0 +1,85 @@
+<!--
+
+Opdracht 8.)
+
+Styling die je toepast wordt toegepast in een bepaalde volgorde. 
+Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. 
+Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. 
+
+Lees hier in de officiële documentatie meer over cascade en inheritance.
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+
+Zoek ook andere referenties om het concept te begrijpen.
+
+Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.
+
+https://www.youtube.com/watch?v=lZ6R_eYYxoE Selector Specificity.
+https://www.youtube.com/watch?v=ZMpaebQ3n6A Inheritance.
+
+Inheritance: Deals with how styles pured down from a parant element to its child element.
+Certain properties, like font-family gets inherited. If you set a font-family on the body element, then it will get inherited
+by all the elements within the <body class="">
+The same is true for color, but it is not true for background or height wich will always default to transparent and auto.
+body
+
+Cascade:
+
+Deals with precedence of style rules or CSS properties (i.e. the order in wich properties are apllied to an html element.
+It solves conflict situations.
+
+What happens when we define set of style rules for specific tag in external, internal as well as inline styles?
+
+The answer is: "Rule get cascade"
+
+When we define a set of rules for specifiv tag in external, internal as well as inline style, then browser creates a virtual declaration
+list by merging all style rules together bt following rules of cascase, and then applies the merged virtual declaration list to specified tag.
+
+The rules of cascade include:
+
+later properties (nearest) override earlier (latter) properties
+more specific selectors (less generic) override less specific (more generic) selectors)
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+https://www.youtube.com/watch?v=5NRjbVaIBdM
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Selectors_visual rules/opdracht.8</title>
+</head>
+<body>
+    <Section>
+        <h1>Cascade</h1>
+        <p>Betreft voorrang van stijlregels of CSS-eigenschappen (d.w.z. de volgorde waarin eigenschappen worden toegepast op een html-element.<br>
+            Het lost conflictsituaties op.<br><br>
+            
+            Wat gebeurt er als we een set stijlregels definiëren voor een specifieke tag in externe, interne en inline stijlen?<br><br>
+            Het antwoord is: "Regel get cascade"<br><br>
+            Wanneer we een set regels definiëren voor een specifieke tag in externe, interne en inline-stijl-<br>
+            maakt de browser een virtuele declaratielijst door alle stijlregels samen te voegen volgens de cascase-regels-<br>
+            en past vervolgens de samengevoegde virtuele declaratielijst toe op de gespecificeerde tag.<br><br>
+            
+            De regels van cascade zijn onder meer:<br><br>
+            
+            - latere eigenschappen (dichtstbijzijnde) overschrijven eerdere (verstliggend) eigenschappen.<br>
+            - meer specifieke selectors (minder algemeen) overschrijven minder specifieke (meer generieke) selectors)<br><br>
+            Zie internetbron, meer over Cascade: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Mozilla.org</a></p>
+    </Section>
+    <section>
+        <h1>Inheritance</h1>
+        <p>Inheritance behandelt hoe stijlen van een ouderelement naar het onderliggende element werden gezuiverd.<br>
+            Bepaalde eigenschappen, zoals font-family, worden geërfd. Als je een font-family instelt op het body-element,<br> 
+            dan wordt het overgenomen door alle elementen binnen   de body class = "" Hetzelfde geldt voor kleur,<br> 
+            maar niet voor achtergrond of hoogte, die standaard altijd transparant en automatisch zijn.<br><br>
+            Zie internetbronnen: <a href="https://www.youtube.com/watch?v=ZMpaebQ3n6A Inheritance.">youtube Inheritance</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">mozilla.org</a></p>
+    </section>
+    
+</body>
+</html>
