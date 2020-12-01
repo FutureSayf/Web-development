@@ -30,12 +30,110 @@ Geef in je antwoord ook aan wat de voordelen zijn van elk selector.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document: Selectors_visual rules_Opdracht 6. CSS</title>
 </head>
 <body>
-    <a href="/Web-development/CSS/1. Selectors_Visual rules/6.1.opdracht.html">Child selectors</a><br>
-    <a href="/Web-development/CSS/1. Selectors_Visual rules/6.2.opdracht.html">Adjacent Selectors</a><br>
-    <a href="/Web-development/CSS/1. Selectors_Visual rules/6.3.opdracht.html">General selectors</a><br>
-    
+    <nav>
+        <ul>
+            <li><a href="#Child selectors">Child selectors</a></li>
+            <li><a href="#Adjacent selectors">Adjacent selectors</a></li>
+            <li><a href="#General selectors">General Selectors</a></li>
+        </ul>
+    </nav><br><br>
+    <section>
+    <h1 id="Child selectors">Child selectors</h1>
+    <p>seleceteren alleen items die direct verwand zijn van een lijst.<br>
+        zie voorbeeld hieronder direct verwand van OL orderd list zijn alle LI's.<br>
+        de Li's die onder UL komen zijn niet direct verwand.<br><br>
+        De Child combinator (>) wordt tussen twee CSS-selectors geplaatst.<br> 
+        Het komt alleen overeen met die elementen die overeenkomen met de tweede selector<br> 
+        die de directe kinderen zijn van elementen die overeenkomen met de eerste.<br><br>
+        Zie bron: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">developer.mozilla.org</a> </p>
+        <figure>
+            <figcaption>Zie voorbeeld outcome: <a href="/Web-development/CSS/1. Selectors_Visual rules/6.1.opdracht.html">Child selectors</a><br></figcaption>
+            <xmp>
+                Syntax: selector1 > selector2 { style properties }
+
+                ol > li {color: green;}
+                
+                <ol>
+                    <li>Numbered list item 1</li>
+                    <li>Numbered list item 2</li>
+                    <ul>
+                      <li>List item 1</li>
+                      <li>List item 2</li>
+                    </ul>
+                    <li>Numbered list item 3</li>
+                  </ol>
+            </xmp>
+        </figure>
+    </section>
+    <hr>
+    <section>
+        <h1 id="Adjacent selectors">Adjacent Selectors</h1>
+        <p>De Adjacent combinator op hetzelfde niveau (+) scheidt twee selectors en komt alleen overeen met het tweede element<br> 
+           als het onmiddellijk volgt op het eerste element, en beide kinderen zijn van hetzelfde bovenliggende element.<br><br>
+           Deze selectors kunnen u helpen styling op een contextuele manier toe te passen.<br>
+           Misschien heb je een heleboel artikelen op een site. De meeste beginnen met "P"-elementen.<br>
+           Maar sommige beginnen met een "ul", die een boven-en ondermarge hebben om er goed uit te zien in een artikel.<br>
+           Maar als ze aan een artikel beginnen, ontstaat er een ongemakkelijke kloof.<br> 
+           De laatste selector hierboven zou die bovenmarge op nul zetten wanneer het een artikel begint (volgt meteen een titel).<br><br>
+           Zie bron : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator">developer.mozilla.org</a></p>
+
+           <figure>
+            <figcaption>Zie voorbeeld outcome: <a href="/Web-development/CSS/1. Selectors_Visual rules/6.2.opdracht.html">Adjacent Selectors</a><br> </figcaption>
+            <xmp>
+                Syntax: former_element + target_element { style properties }
+
+                p + p {color: green;}
+                div + p {color: hotpink;}
+                
+                <div>
+                    <p>Line One</p>
+                    <p>Line Two</p>
+                    <div>Box</div>
+                    <p>Line Three</p>
+                </div>
+            <hr>    
+                <div>
+                    <p>I'm a paragraph</p>
+                    <p>I get selected!</p>
+                  </div>
+                  
+                  <div>
+                    <p>I'm a paragraph</p>
+                    <h2>Monkey hair</h2>
+                    <p>I will NOT get selected</p>
+                  </div>
+            </xmp>
+        </figure>
+    </section>
+    <hr>
+    <section>
+        <h1 id="General selectors">General selectors</h1>
+        <p>De algemene combinator tussen broers en zussen (~) scheidt twee selectors en komt overeen met alle iteraties van het tweede element,<br> 
+           die volgen op het eerste element (hoewel niet noodzakelijk onmiddellijk),<br> 
+           en zijn kinderen van hetzelfde bovenliggende element.<br><br>
+           Zie bron: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator">developer.mozilla.org</a></p>
+
+           <figure>
+            <figcaption>Zie voorbeeld outcome: <a href="/Web-development/CSS/1. Selectors_Visual rules/6.3.opdracht.html">General selectors</a></figcaption>
+            <xmp>
+                Syntax: former_element ~ target_element { style properties }
+
+                div ~ p { color: hotpink;}
+
+                <div>
+                    <p>Line One</p>
+                    <p>Line Two</p>
+                    <div>Box</div>
+                    <p>Line Three</p>
+                    <p>Line four</p>
+                    <p>Line Three</p>
+                    <p>Line four</p>
+                </div>
+            </xmp>
+        </figure>
+    </section>    
 </body>
 </html>
