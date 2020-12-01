@@ -1,0 +1,45 @@
+<!--
+
+Opdracht 2
+Maak wat hieronder staat met paragraph en span tags.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.Het Box-model/opdracht.2</title>
+    <style>
+       p:nth-of-type(odd) {background-color: green; border: 2px black; margin: -16px 0;}
+       p:empty {background-color: lightgreen; height: 15px; width: 100%;}
+       span {background-color: white;}
+       div + p {background-color: white;}
+
+    </style>
+</head>
+<body>
+    <h1>Opdracht 2</h1><br><br>
+    <p>Dit is een block box en neemt de hele breedte in waardoor de volgende box op de volgende regel komt.</p>
+    <p></p>
+    <p>In dit blok zit <span>inline tekst</span> in wat dus niet op de volgende regel komt te <span>staan</span>.</p><br>
+
+    <figure>
+        <figcaption>Syntax</figcaption>
+        <xmp>
+            p:nth-of-type(odd) {background-color: green; border: 2px black; margin: -16px 0;}
+            p:empty {background-color: lightgreen; height: 15px; width: 100%;}
+            <span style="background-color: white;">inline tekst</span>
+        </xmp>
+    </figure>
+    <div>
+        <h1>Opdracht 3</h1>
+        Wat gebeurt er als je een width en een height toevoegt aan de span tag (span) van vorige opdracht?<br>
+        <h2>Het antwoord..</h2>
+        Helemaal niets.....
+    </div>
+    
+</body>
+</html>
