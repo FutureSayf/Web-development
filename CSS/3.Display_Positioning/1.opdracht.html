@@ -1,0 +1,88 @@
+<!-- 
+3. Display & Positioning
+
+De CSS ‘position’ property bepaalt hoe een HTML element in een document wordt gepositioneerd. 
+Je kunt elk HTML-element op elke gewenste locatie plaatsen. 
+Je kunt bijvoorbeeld aangeven of je het element relatief ten opzichte van de standaardpositie op de pagina wilt plaatsen 
+of absoluut op basis van het bovenliggende element. 
+De top, right, bottom en left properties bepalen de uiteindelijke locatie van geplaatste elementen. 
+Officiële documentatie over display & positioning vind je hier op deze website.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS.3 Display & Positioning/opdracht.1</title>
+ </head>
+ <body>
+     <section>
+         <h1>CSS.3 Display <span style="color: red;">&</span> Positioning</h1>
+         <p>De CSS ‘position’ property bepaalt hoe een HTML element in een document wordt gepositioneerd.<br> 
+            Je kunt elk HTML-element op elke gewenste locatie plaatsen.<br><br>
+            Je kunt bijvoorbeeld aangeven of je het element relatief ten opzichte van de standaardpositie op de pagina wilt plaatsen of<br> 
+            absoluut op basis van het bovenliggende element.<br><br>
+            De top, right, bottom en left properties bepalen de uiteindelijke locatie van geplaatste elementen.<br> 
+            Officiële documentatie over display & positioning vind je <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"><strong>hier op de website</strong></a> van Mozilla.org.<br>
+            <br>Ook kun je de documentatie van W3school raadplegen. Meer info op <a href="https://www.w3schools.com/cssref/pr_class_position.asp"> <strong>w3Schools.com</strong></a></p><br><br>
+            <hr>
+            <h2>Opdracht. <span style="color: red;">1</span></h2>
+            <p>Welke position properties zijn er?<br> Leg voor elke position property uit wat het doet.<br><br> 
+                Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.
+            </p><br>
+            <h3>..Het Antwoord</h3>
+            <p>De eigenschap position in CSS stelt in hoe een element in een document wordt gepositioneerd.<br> 
+                De eigenschappen boven, rechts, onder en links bepalen de uiteindelijke locatie van gepositioneerde elementen.<br><br>
+                Hier volgen enkele Position Values:</p>
+            <ul>
+                <li><strong>static</strong></li>
+                    <ul><p>Het element wordt gepositioneerd volgens de normale stroom van het document.<br> 
+                       De eigenschappen:   boven,   rechts,   onder,   links en   z-index   hebben geen effect.<br> 
+                       Dit is de standaardwaarde.</p></ul>
+                
+                <li><strong>relative</strong></li>
+                    <ul><p>Het element wordt gepositioneerd volgens de normale stroom van het document en vervolgens verschoven ten opzichte van zichzelf-<br> 
+                       op basis van de waarden boven, rechts, onder en links.<br><br> 
+                       De offset heeft geen invloed op de positie van andere elementen;<br> 
+                       dus de ruimte die voor het element in de pagina-indeling wordt gegeven, is hetzelfde alsof de positie statisch zou zijn.</p></ul>
+                
+                <li><strong>absolute</strong></li>
+                    <ul><p>Het element wordt verwijderd uit de normale documentstroom en er wordt geen ruimte gemaakt voor het element in de paginalay-out.<br> 
+                       Het is gepositioneerd ten opzichte van de dichtstbijzijnde gepositioneerde voorouder indien aanwezig,<br> 
+                       anders wordt het relatief geplaatst ten opzichte van het aanvankelijke bevattende blok.<br><br> 
+                       De uiteindelijke positie wordt bepaald door de waarden boven, rechts, onder en links.<br>
+                       Deze waarde creëert een nieuwe stapelcontext wanneer de waarde van z-index niet auto is.<br> 
+                       De marges van absoluut gepositioneerde dozen vallen niet samen met andere marges.</p></ul>
+                
+                <li><strong>fixed</strong></li>
+                    <ul><p>Het element wordt verwijderd uit de normale documentstroom en er wordt geen ruimte gemaakt voor het element in de paginalay-out.<br> 
+                       Het is gepositioneerd ten opzichte van het initiële bevattende blok dat is ingesteld door de viewport.<br><br>
+                       Behalve wanneer een van zijn voorouders:<br> 
+                       een transformatie-, perspectief- of filtereigenschap heeft die is ingesteld op iets anders dan geen (zie de CSS Transforms Spec)<br><br> 
+                       in welk geval die voorouder zich gedraagt ​​als het bevattende blok.<br><br>
+                       (Merk op dat er in de browser inconsistenties zijn met het perspectief en het filter die bijdragen aan het voorkomen van blokvorming.)<br> 
+                       <br>De uiteindelijke positie wordt bepaald door de waarden boven, rechts, onder en links.<br>
+                       <br>Deze waarde creëert altijd een nieuwe stapelcontext.<br> 
+                       In gedrukte documenten wordt het element op elke pagina op dezelfde positie geplaatst.</p></ul>
+                
+                <li><strong>sticky</strong></li>
+                    <ul><p>Het element wordt gepositioneerd volgens de normale stroom van het document en vervolgens verschoven ten opzichte van de dichtstbijzijnde scrollende voorouder.<br>
+                       Het bevat blok (dichtstbijzijnde voorouder op blokniveau), inclusief tabelgerelateerde elementen, gebaseerd op de waarden boven, rechts, onder, en links.<br> 
+                       <br>De offset heeft geen invloed op de positie van andere elementen.<br><br>
+                       Deze waarde creëert altijd een nieuwe stapelcontext.<br><br>
+                       Merk op dat een plakkerig element "blijft plakken" aan zijn dichtstbijzijnde voorouder dat een "scrollmechanisme" heeft.<br><br> 
+                       (gemaakt wanneer de overloop verborgen is, scrollen, automatisch of overlay)<br><br>
+                       zelfs als die voorouder niet de dichtstbijzijnde eigenlijk scrollende voorouder is.<br><br>
+                       Dit remt effectief elk "plakkerig" gedrag</p></ul>
+
+            </ul>
+            
+
+     </section>
+     
+ </body>
+ </html>

@@ -1,0 +1,104 @@
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS.2.Het Box-model/opdracht 9.</title>
+<style>
+    .box 
+        {
+            background-color: cornflowerblue;
+            padding: 100px;
+            margin: 100px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+    .box2 
+        {
+            background-color: darkcyan;
+            padding: 5px;
+            margin: 5px;
+            border: 5px solid black;
+            box-sizing: content-box;
+        }
+    .box3 
+        {
+            background-color: rgb(0, 0, 0); color: whitesmoke;
+            padding: 50px;
+            margin: 50px;
+            border: 5px solid rgb(199, 28, 28);
+            width: fit-content;
+        }
+</style>
+</head>
+<body>
+    <section>
+        <h1>Opdracht 9</h1>
+        <p>Maak een aantal voorbeelden van boxen en maak gebruik van steeds verschillende margin, padding en border properties.<br>
+        <strong>Let's Go!</strong><br><br>Zie internetbron meer over: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">Box-sizing</a></p><hr>
+    </section>
+    <section class="box">
+        <p><strong>Voorbeeld nr.1</strong></p>
+        <div class="box">
+            <p>10 KG.</p>
+        </div>
+
+    </section>
+    
+    <section class="box2">
+        <p><strong>Voorbeeld nr.2</strong></p>
+        <div class="box2">
+            <p>50 KG.</p>
+    </div>
+    </section>
+    
+    <section class="box3">
+        <p><strong>Voorbeeld nr.3</strong></p>
+        <div class="box3">
+            <p>100 KG.</p>
+    </div>
+    </section><br><br><hr>
+    
+
+    <figure>
+        <figcaption style="color: red;">Syntax</figcaption>
+        <xmp>
+        .box 
+            {
+                background-color: cornflowerblue;
+                padding: 50px;
+                margin: 50px;
+                border: 5px solid black;
+                box-sizing: border-box;
+            }
+        .box2 
+            {
+                background-color: darkcyan;
+                padding: 50px;
+                margin: 100px;
+                border: 5px solid black;
+                box-sizing: content-box;
+            }
+        .box3 
+            {
+                background-color: rgb(0, 0, 0); color: whitesmoke;
+                padding: 50px;
+                margin: 100px;
+                border: 5px solid rgb(199, 28, 28);
+                width: fit-content;
+            }
+
+        section class="box....etc"> 
+       
+
+        </xmp>
+    </figure>
+
+    
+</body>
+</html>
