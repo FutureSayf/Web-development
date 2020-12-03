@@ -1,0 +1,76 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS.3.Display & Positioning</title>
+    <style>
+        .container
+        {
+            position: relative;
+        }
+        .topright
+        {
+            position: absolute;
+            right: 350px;
+            top: 80px;
+        }
+        img
+        {
+            width: 75%;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Opdracht.<span style="color: red;"> 7</span></h1>
+    <p>Zie de onderstaande image met tekst. Kun jij dit namaken? Gebruik zelf een foto van een zonnige bestemming.<br> 
+        Gebruik position, maar je mag geen z-index toepassen.<br><br>
+        Zie internetbron: <a href="https://www.w3schools.com/css/css_positioning.asp#:~:text=There%20are%20five%20different%20position,absolute"> w3schools</a>
+    <br><br></p>
+    <div class="container">
+        <img src="/Web-development/Sources/Desert.jpg" alt="Desertlandscape" width="750px" height="300">
+            
+            <div class="topright">
+                <h1>Life is what you make of it..</h1>
+                <h2>..Or...Don't</h2>
+                <p>Leave it how it is..</p>
+            </div>
+    </div>
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>
+            .container
+        {
+            position: relative;
+        }
+        .topright
+        {
+            position: absolute;
+            right: 350px;
+            top: 80px;
+        }
+        img
+        {
+            width: 75%;
+            height: auto;
+        }
+        
+        
+        
+        <div class="container">
+            <img src="/Web-development/Sources/Desert.jpg" alt="Desertlandscape" width="750px" height="300">
+                
+                <div class="topright">
+                    <h1>Life is what you make of it..</h1>
+                    <h2>..Or...Don't</h2>
+                    <p>Leave it how it is..</p>
+                </div>
+        </div>
+
+        </xmp>
+        </figure>
+</body>
+</html>
