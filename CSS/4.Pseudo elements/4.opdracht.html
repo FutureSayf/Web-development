@@ -1,0 +1,112 @@
+<!-- 
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pseudo element</title>
+     <style>
+         /* horizontaal */
+         .corner-border::before
+         {
+             content: '';
+             position: absolute;
+             background-color: chartreuse;
+             width: 5%;
+             height: 3px;
+             top: 0;
+             left: 0;
+         }
+         
+         /* horizontaal */
+         .border-corner::after
+         {
+             content: '';
+             position: absolute;
+             background-color: chartreuse;
+             width: 5%;
+             height: 3px;
+             bottom: 0;
+             right: 0;
+         }
+         div h1
+         {
+             position: relative;
+             background-color: cornflowerblue;
+             width: 400px;
+             text-align: center;
+             border-width: 3px;
+             border-left: 5px solid black;
+             border-right: 5px solid black;
+         }
+         
+     </style>
+ </head>
+ <body>
+    <section>
+        <h1>Opdracht.<span style="color: red;"> 4</span></h1>
+        <p>Zie onderstaand voorbeeld, conform de opdracht. Hier is gebruik gemaakt van de Pseudo elementen.
+            <ul>
+                <li>::after</li>
+                <li>::before</li>
+            </ul>
+            De verticale lijnen zijn aangebracht doormiddel van de border lines aan te passen in de header element zelf.
+        </p>
+        
+    </section>
+    
+    <section>
+         <div>
+             <h1 class="border-corner corner-border">BUTTON</h1>
+         </div>
+
+         <figure>
+            <figcaption><span style="color: red;">Syntax</span></figcaption>
+            <xmp>
+                /* horizontaal */
+                .corner-border::before
+                {
+                    content: '';
+                    position: absolute;
+                    background-color: chartreuse;
+                    width: 5%;
+                    height: 3px;
+                    top: 0;
+                    left: 0;
+                }
+                
+                /* horizontaal */
+                .border-corner::after
+                {
+                    content: '';
+                    position: absolute;
+                    background-color: chartreuse;
+                    width: 5%;
+                    height: 3px;
+                    bottom: 0;
+                    right: 0;
+                }
+                div h1
+                {
+                    position: relative;
+                    background-color: cornflowerblue;
+                    width: 400px;
+                    text-align: center;
+                    border-width: 3px;
+                    border-left: 5px solid black;
+                    border-right: 5px solid black;
+                }
+
+                <div>
+                    <h1 class="border-corner corner-border">BUTTON</h1>
+                </div>
+            </xmp>
+        </figure>
+     </section>
+     
+ </body>
+ </html>
