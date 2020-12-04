@@ -1,0 +1,33 @@
+<!-- 
+
+https://dev.to/cydstumpel/making-magic-with-before-and-after-pseudo-elements-2fb2
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pseudo element</title>
+     <style>
+         .container
+         {
+
+         }
+         p ::before
+         {
+            content: '';
+            background: tomato;
+            width: 500px;
+         }
+     </style>
+ </head>
+ <body>
+     
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt nobis labore est natus quasi minima vel at soluta aspernatur atque, similique officia provident itaque sapiente dignissimos eos qui quo!</p>
+        </div>
+     
+ </body>
+ </html>
