@@ -2,32 +2,119 @@
 
 https://dev.to/cydstumpel/making-magic-with-before-and-after-pseudo-elements-2fb2
 
+ .pseudo::before
+        {
+            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere adipisci ipsam, aperiam incidunt suscipit perspiciatis. At corrupti veniam omnis repudiandae! Et delectus nobis eveniet. Beatae commodi odit ullam mollitia nisi.';
+            position: absolute;
+            color: blanchedalmond;
+            width: 750px;
+            text-align: center;
+            
+           <div class="pseudo">
+        <p></p>
+        <img src="/Web-development/Sources/Desert.jpg">
+    </div>
+
+        }
+
+https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements
+
+
  -->
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Pseudo element</title>
-     <style>
-         .container
-         {
-
-         }
-         p ::before
-         {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <style>
+        .pseudo::before
+        {
             content: '';
-            background: tomato;
+            background-image: url(/Web-development/Sources/Desert.jpg);
+            background-size: 100% 100%;
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+
+            height: 500px;
+            width: 750px;
+
+        }
+        div p
+        {
+            text-align: center;
+            /* position: relative; */
+            width: 750px;
+            color: whitesmoke;
+            opacity: 0.1;
+        }
+        img
+        {
             width: 500px;
-         }
-     </style>
- </head>
- <body>
-     
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt nobis labore est natus quasi minima vel at soluta aspernatur atque, similique officia provident itaque sapiente dignissimos eos qui quo!</p>
-        </div>
-     
- </body>
- </html>
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Opdracht.<span style="color: red;"> 5</span></h1>
+        <p>In deze opdracht is gebruik gemaakt van pseudo-element ::before.<br>
+           Omdit te realiseren zijn de image configuraties in de styling van de pseudo-element aangebracht.<br>
+        de class is aan de betreffende div toegewezen, en de image vindt dan ook plaatst voor het paragraaf gedeelte.<br><br>
+    voor meer informatie zie de internetbron: <a href="https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements">Stackoverflow.</a><br></p>
+    </section>
+
+    <section>
+    <div class="pseudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ratione suscipit quae qui porro eum nesciunt vero dolore quibusdam totam dolores, ipsa nulla ex labore delectus est non sapiente. Obcaecati eaque ad veniam natus voluptatibus expedita ex numquam dicta repudiandae non nostrum libero eius fugit suscipit quasi aliquid, repellat quaerat veritatis inventore eligendi reprehenderit minus quia! Non, corporis necessitatibus repellat quas nemo pariatur doloribus aliquid cum reprehenderit fugit fuga, consequatur, molestiae minima harum tempora corrupti aspernatur? Recusandae inventore ducimus cumque, vitae tempora molestiae expedita dolorum quia nobis nam consequuntur assumenda harum ea rerum? Voluptas animi culpa, totam aliquam fugit enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ad rem tenetur numquam optio aliquid dignissimos minus nisi. Repellendus, dicta recusandae! Expedita beatae molestiae laborum. Possimus nesciunt ea veniam minus, deserunt mollitia natus quos? Doloremque reiciendis neque aliquam iste architecto recusandae voluptas et enim. Eum voluptates tempore at accusamus beatae harum labore quas eos quo sapiente sunt nobis ipsam sint maiores reiciendis ducimus iste atque, necessitatibus ab perferendis odit ratione. Ipsum quidem odit architecto perferendis voluptatum ratione eos consectetur veniam consequuntur, ducimus error quam aperiam! Quaerat non nesciunt reiciendis at exercitationem dolorum voluptatum quae, magni omnis? Ipsa error temporibus optio!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit eligendi exercitationem obcaecati ullam maxime voluptatum, error corrupti, repellat illo est culpa eum, minima sequi quaerat facilis earum magni a nulla voluptate dolores tenetur dicta. Delectus id eaque dolorem repudiandae! Impedit consequuntur vitae voluptates sapiente molestiae laborum inventore voluptate aspernatur rem, ex alias ad rerum, aliquam esse. Iusto et optio laudantium, error recusandae, officia doloribus quo voluptatem accusamus repellat ipsum consectetur? Quam laborum debitis iure nisi voluptates illum aperiam numquam! Maxime voluptate atque facilis veritatis adipisci aperiam? Voluptatum cum voluptatem possimus quas unde recusandae minima facere modi dolorum blanditiis. Esse eaque natus voluptatum quis ab eius consequatur nostrum, voluptatibus eos possimus at, cumque officia dignissimos nam? Quidem non quae, dolorum neque sequi minus ullam eius nobis voluptate, illo atque autem mollitia quod sapiente voluptatem aliquam modi doloremque id. Ut aliquid aspernatur soluta sit possimus! Aliquam quae possimus sapiente numquam. Iste asperiores nostrum veniam facilis quod, neque iusto nisi sequi facere minima deserunt sit voluptates, eius, ex totam. Facilis placeat quis minus dolores odit totam provident? Impedit optio, cumque quaerat, esse quisquam, ipsam similique magni quo totam aliquid adipisci vitae voluptas. Modi eos dolore sunt ab delectus nobis vel dolorem harum quo!</p>
+    </div>
+    </section>
+
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>
+
+            .pseudo::before
+        {
+            content: '';
+            background-image: url(/Web-development/Sources/Desert.jpg);
+            background-size: 100% 100%;
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+
+            height: 500px;
+            width: 750px;
+
+        }
+        div p
+        {
+            text-align: center;
+            /* position: relative; */
+            width: 750px;
+            color: whitesmoke;
+            opacity: 0.1;
+        }
+        img
+        {
+            width: 500px;
+            height: 500px;
+        }
+
+
+        <section>
+            <div class="pseudo">
+                <p>lorem etc</p>
+            </div>
+        </section>
+
+        </xmp>
+    </figure>
+
+</body>
+
+</html>
