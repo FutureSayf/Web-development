@@ -1,0 +1,209 @@
+<!--
+
+    https://css-tricks.com/pseudo-element-roundup/
+    https://codepen.io/martinkrulltott/pen/VLoare
+    https://blog.usejournal.com/complex-shapes-in-css-8c0c02314aed
+
+    https://girliemac.com/blog/2012/03/24/making-chupa-chups-using-css3-pseudo-elements/
+    https://medium.com/@RoseLGauthier/how-to-use-css3-pseudo-elements-to-create-asymmetrical-designs-f610f2a481ed
+
+    https://www.youtube.com/watch?v=Nloq6uzF8RQ
+
+    https://stackoverflow.com/questions/19504215/create-a-bell-shape-with-css
+
+    https://convverge.com/2014/09/04/fun-with-before-and-after-pseudo-elements/
+    
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements</title>
+    <style>
+        .ball
+        {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 50px;
+            /* display: inline-block; */
+        }
+
+        section
+        {
+            display: inline-block;
+            padding-right: 50px;
+        }
+        .banner::before
+        {
+            content: '*';
+            color: red;
+            position: absolute;
+            left: 25px;
+            top: 10px;
+        }
+        .banner::after
+        {
+            content: '*';
+            color: red;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+        }
+        .banner
+        {
+            height: 75px;
+            width: 250px;
+            background-color: black;
+            position: relative;
+            /* display: inline-block; */
+            border-radius: 40px 40px;    
+            left: 25px;
+            bottom: 160px;
+        }
+        .banner h1
+        {
+            text-align: center;
+            color: blanchedalmond;
+            position: relative;
+            padding-top: 20px;
+            /* padding-bottom: px; */
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Opdracht.<span style="color: red;"> 6</span></h1>
+    <p>De volgende afbeeldingen zijn middels pseudo elementen nagemaakt conform de opdracht.<br>
+       Om dit te realiseren zijn er doormiddel van div configuratie's 2 objecten aangemaakt.<br>
+        <ul>
+            <li>Cirkel</li>
+            <li>Rechthoek</li>
+        </ul>
+        Deze zijn middels positioning op de juiste plek aangewezen, zodat deze overlappend zijn.<br>
+        Met de pseudo elementen zijn de * aangebracht. Zie onderstaand voor Syntax.<br><br>
+        Voor meer informatie over dit onderwerp zie volgende links:
+        <a href="https://www.w3schools.com/howto/howto_css_circles.asp">Maken van Circles,</a>
+        <a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">Border-radius,</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before">::before.</a><br><br>
+    </p>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>1</h1></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>2</h1></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>3</h1></div>
+        </div>
+    </section>
+
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>
+
+            .ball
+        {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 50px;
+            /* display: inline-block; */
+        }
+
+        section
+        {
+            display: inline-block;
+            padding-right: 50px;
+        }
+        .banner::before
+        {
+            content: '*';
+            color: red;
+            position: absolute;
+            left: 25px;
+            top: 10px;
+        }
+        .banner::after
+        {
+            content: '*';
+            color: red;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+        }
+        .banner
+        {
+            height: 75px;
+            width: 250px;
+            background-color: black;
+            position: relative;
+            /* display: inline-block; */
+            border-radius: 40px 40px;    
+            left: 25px;
+            bottom: 160px;
+        }
+        .banner h1
+        {
+            text-align: center;
+            color: blanchedalmond;
+            position: relative;
+            padding-top: 20px;
+            /* padding-bottom: px; */
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Opdracht.<span style="color: red;"> 6</span></h1>
+    <p>De volgende afbeeldingen zijn middels pseudo elementen nagemaakt conform de opdracht.<br>
+       Om dit te realiseren zijn er doormiddel van div configuratie's 2 objecten aangemaakt.<br>
+        <ul>
+            <li>Cirkel</li>
+            <li>Rechthoek</li>
+        </ul>
+        Deze zijn middels positioning op de juiste plek aangewezen, zodat deze overlappend zijn.<br>
+        Met de pseudo elementen zijn de * aangebracht. Zie onderstaand voor Syntax.<br><br>
+        Voor meer informatie over dit onderwerp zie volgende links:
+        <a href="https://www.w3schools.com/howto/howto_css_circles.asp">Maken van Circles,</a>
+        <a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">Border-radius,</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before">::before.</a><br><br>
+    </p>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>1</h1></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>2</h1></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="ball"></div>
+            <div class="banner"><h1>3</h1></div>
+        </div>
+    </section>
+
+        </xmp>
+    </figure>
+</body>
+</html>
