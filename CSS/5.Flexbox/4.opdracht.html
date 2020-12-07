@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox/Opdracht.4/justify-content</title>
+    <style>
+        .flex-container
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(118, 152, 153);
+            /* width: 50%; */
+            justify-content: flex-end;
+            margin-bottom: 15px;
+        }
+        .flex-container1
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(77, 96, 112);
+            /* width: 50%; */
+            justify-content: flex-start;
+            margin-bottom: 15px;
+        }
+        .flex-container2
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(109, 111, 204);
+            /* width: 50%; */
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .flex-container div
+        {
+            background-color: rgb(195, 0, 255);
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+        .flex-container1 div
+        {
+            background-color: rgb(0, 253, 241);
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+        .flex-container2 div
+        {
+            background-color: chartreuse;
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Opdracht.<span style="color: red;"> 4</span></h1>
+        <p>Opdracht omschrijving. Gebruik geen width, height of line-height.
+            <br>
+            <a href=""></a>
+            <a href=""></a>
+        </p>
+    </section>
+    
+    <section>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </section>
+    <section>
+        <div class="flex-container1">
+            <div>I</div>
+            <div>II</div>
+            <div>III</div>
+            <div>IV</div>
+            <div>V</div>
+            <div>VI</div>
+        </div>
+    </section>
+    <section>
+        <div class="flex-container2">
+            <div>٠</div>
+            <div>١</div>
+            <div>٢</div>
+            <div>٣</div>
+            <div>٤</div>
+            <div>٥</div>
+            <div>٦</div>
+            <div>٧</div>
+            <div>٨</div>
+            <div>٩</div>
+        </div>
+    </section>
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>
+            <style>
+                .flex-container
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(118, 152, 153);
+                    /* width: 50%; */
+                    justify-content: flex-end;
+                    margin-bottom: 15px;
+                }
+                .flex-container1
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(77, 96, 112);
+                    /* width: 50%; */
+                    justify-content: flex-start;
+                    margin-bottom: 15px;
+                }
+                .flex-container2
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(204, 109, 109);
+                    /* width: 50%; */
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                }
+                .flex-container div
+                {
+                    background-color: rgb(195, 0, 255);
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+                .flex-container1 div
+                {
+                    background-color: rgb(0, 253, 241);
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+                .flex-container2 div
+                {
+                    background-color: chartreuse;
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+            </style>
+        <section>
+            <div class="flex-container">
+                <div>I</div>
+                <div>II</div>
+                <div>III</div>
+                <div>IV</div>
+                <div>V</div>
+                <div>VI</div>
+            </div>
+        </section>
+        <section>
+            <div class="flex-container1">
+                <div>I</div>
+                <div>II</div>
+                <div>III</div>
+                <div>IV</div>
+                <div>V</div>
+                <div>VI</div>
+            </div>
+        </section>
+        <section>
+            <div class="flex-container2">
+                <div>٠</div>
+                <div>١</div>
+                <div>٢</div>
+                <div>٣</div>
+                <div>٤</div>
+                <div>٥</div>
+                <div>٦</div>
+                <div>٧</div>
+                <div>٨</div>
+                <div>٩</div>
+            </div>
+        </section>
+        </xmp>
+    </figure>
+</body>
+</html>
