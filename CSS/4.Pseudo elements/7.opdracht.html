@@ -1,0 +1,137 @@
+<!--
+https://css-tricks.com/working-with-shapes-in-web-design/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements/7</title>
+    <style>
+        section
+        {
+            position: relative;
+            left: 100px;
+            top: 100px;
+            margin-bottom: 150px;
+        }
+        div
+        {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(29, 6, 44);
+            transform: rotate(20deg);
+        }
+        .box2
+        {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(109, 21, 144);
+            opacity: 0.3;
+            /* transform: translate(150px, 50px); */
+            transform: rotate(45deg);
+        }
+        .box3
+        {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(0, 255, 119);
+            opacity: 0.7;
+            transform: rotate(115deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Opdracht.<span style="color: red;"> 7</span></h1>
+    <p>De volgende afbeelding is nagemaakt conform de opdracht.<br>
+       Om dit te realiseren is er gebruik gemaakt van de  volgende eigenschappen:
+        <ul>
+            <li>Transform functie</li>
+            <li>rotate</li>
+        </ul>
+        De configuratie's van de 3 div's zijn ondergebracht in class. Deze zijn binnen elkaar geplaatst.<br>
+        Om de objecten van elkaar te onderscheiden is er gebruik gemaakt van diverse kleur combinatie's.<br><br>
+        Zie onderstaand voor Sytax.<br><br> Voor meer informatie zie:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform,</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()">Rotate.</a>
+    </p>
+   
+    <section>
+        <div>
+            <div class="box2">
+                <div class="box3">
+                    
+                </div>
+            </div>
+        </div>
+    </section><br>
+    
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>  
+            <style>
+                section
+                {
+                    position: relative;
+                    left: 100px;
+                    top: 100px;
+                }
+                div
+                {
+                    width: 250px;
+                    height: 250px;
+                    background-color: rgb(29, 6, 44);
+                    transform: rotate(20deg);
+                }
+                .box2
+                {
+                    width: 250px;
+                    height: 250px;
+                    background-color: rgb(109, 21, 144);
+                    opacity: 0.3;
+                    /* transform: translate(150px, 50px); */
+                    transform: rotate(45deg);
+                }
+                .box3
+                {
+                    width: 250px;
+                    height: 250px;
+                    background-color: rgb(0, 255, 119);
+                    opacity: 0.7;
+                    transform: rotate(115deg);
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Opdracht.<span style="color: red;"> 7</span></h1>
+            <p>De volgende afbeelding is nagemaakt conform de opdracht.<br>
+               Om dit te realiseren is er gebruik gemaakt van de  volgende eigenschappen:
+                <ul>
+                    <li>Transform functie</li>
+                    <li>rotate</li>
+                </ul>
+                De configuratie's van de 3 div's zijn ondergebracht in class. Deze zijn binnen elkaar geplaatst.<br>
+                Zie onderstaand voor Sytax.<br><br> Voor meer informatie zie:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform,</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()">Rotate.</a>
+            </p>
+           
+            <section>
+                <div>
+                    <div class="box2">
+                        <div class="box3">
+                            
+                        </div>
+                    </div>
+                </div> 
+        </xmp>
+</figure>
+</body>
+</html>
