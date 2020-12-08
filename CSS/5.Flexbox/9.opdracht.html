@@ -19,9 +19,14 @@
             flex-wrap: wrap;
             width: 1050px;
             height: 550px;
+            padding: 30px;
             /* background-color: darkturquoise; */
             background-image: linear-gradient(rgb(7, 84, 87), rgb(26, 36, 37));
             align-items: center;
+        }
+        .container:hover
+        {
+            background-image: linear-gradient(rgb(7, 62, 87), rgb(26, 36, 37));
         }
         .container img
         {
@@ -29,6 +34,11 @@
             display: block;
             width: 220px;
             height: 300px;
+            /* filter: invert(100%) */
+        }
+        .container img:hover
+        {
+            filter: invert(100%);
         }
         .container h1 
         {
@@ -39,6 +49,11 @@
             opacity: 0.2;
 
         }
+        .container h1:hover
+        {
+            color: goldenrod;
+            opacity: 0.9;
+        }
         .container p
         {
             text-align: center;
@@ -47,12 +62,21 @@
             color: blanchedalmond;
             opacity: 0.3;
         }
+        .container p:hover
+        {
+            color: rgb(180, 8, 223);
+            opacity: 2.0;
+        }
         .container button
         {
             width: 220px;
             position: relative;
             bottom: 5px;
             background-image: radial-gradient(red, yellow);
+        }
+        .container button:hover
+        {
+            background-image: linear-gradient(yellow, rgb(7, 84, 87));
         }
         .box
         {
