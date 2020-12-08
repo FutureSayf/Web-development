@@ -7,13 +7,193 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/flex
  -->
 
  <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>FlexBox/Opdracht.5</title>
- </head>
- <body>
-     
- </body>
- </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox/Opdracht.5/align-items</title>
+    <style>
+        .flex-container
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(118, 152, 153);
+            /* width: 50%; */
+            /* justify-content: flex-end; */
+            width: 300px;
+            height: 300px;
+            align-items: stretch;
+            margin-bottom: 15px;
+        }
+        .flex-container1
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(77, 96, 112);
+            width: 400px;
+            height: 400px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .flex-container2
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(109, 111, 204);
+            width: 500px;
+            height: 500px;
+            align-items: flex-end;
+            margin-bottom: 15px;
+        }
+        .flex-container div
+        {
+            background-color: rgb(195, 0, 255);
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+        .flex-container1 div
+        {
+            background-color: rgb(0, 253, 241);
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+        .flex-container2 div
+        {
+            background-color: chartreuse;
+            opacity: 0.2;
+            /* width: 75px; */
+            margin: 10px;
+            text-align: center;
+            /* line-height: 75px; */
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Opdracht.<span style="color: red;"> 5</span></h1>
+        <p>De property ‘align-items’ is een property die door flex gebruikt wordt.<br> 
+           Maak verschillende voorbeelden door gebruik te maken van de align-items property.<br>
+
+            <br>
+            <a href=""></a>
+            <a href=""></a>
+        </p>
+    </section>
+    
+    <section>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <p>Voorbeeld van: align-items: stretch</p>
+    </section><br>
+    <section>
+        <div class="flex-container1">
+            <div>I</div>
+            <div>II</div>
+            <div>III</div>
+            <div>IV</div>
+            <div>V</div>
+            <div>VI</div>
+        </div>
+        <p>Voorbeeld van: align-items: center</p><br>
+    </section>
+    <section>
+        <div class="flex-container2">
+            <div>٠</div>
+            <div>١</div>
+            <div>٢</div>
+            <div>٣</div>
+            <div>٤</div>
+            <div>٥</div>
+            <div>٦</div>
+            <div>٧</div>
+            <div>٨</div>
+            <div>٩</div>
+        </div>
+        <p>Voorbeeld van: align-items: flex-end</p><br>
+    </section>
+    <figure>
+        <figcaption><span style="color: red;">Syntax</span></figcaption>
+        <xmp>
+            <style>
+                .flex-container
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(118, 152, 153);
+                    /* width: 50%; */
+                    /* justify-content: flex-end; */
+                    width: 300px;
+                    height: 300px;
+                    align-items: stretch;
+                    margin-bottom: 15px;
+                }
+                .flex-container1
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(77, 96, 112);
+                    width: 400px;
+                    height: 400px;
+                    align-items: center;
+                    margin-bottom: 15px;
+                }
+                .flex-container2
+                {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    background-color: rgb(109, 111, 204);
+                    width: 500px;
+                    height: 500px;
+                    align-items: flex-end;
+                    margin-bottom: 15px;
+                }
+                .flex-container div
+                {
+                    background-color: rgb(195, 0, 255);
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+                .flex-container1 div
+                {
+                    background-color: rgb(0, 253, 241);
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+                .flex-container2 div
+                {
+                    background-color: chartreuse;
+                    opacity: 0.2;
+                    /* width: 75px; */
+                    margin: 10px;
+                    text-align: center;
+                    /* line-height: 75px; */
+                    font-size: 50px;
+                }
+            </style>
+        </xmp>
+    </figure>
+</body>
+</html>
