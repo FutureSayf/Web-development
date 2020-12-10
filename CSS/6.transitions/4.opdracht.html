@@ -1,6 +1,9 @@
 <!-- 
 http://css3.bradshawenterprises.com/transitions/
+https://webdesign.tutsplus.com/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975
+https://cdn.tutsplus.com/webdesign/uploads/legacy/articles/042_css_animation_intro/demo.html/index2.html?_ga=2.175943906.1136531403.1607591224-472611509.1607591224
 
+https://css-tricks.com/almanac/properties/t/transition/
  -->
 
  <!DOCTYPE html>
@@ -16,32 +19,67 @@ http://css3.bradshawenterprises.com/transitions/
             display: flex;
             width: 800px;
             height: 400px;
-            background-image: radial-gradient(rgb(13, 48, 51), rgb(5, 12, 36));
-            justify-content: center;
-            align-items: center;
-
+            background-image: radial-gradient(rgb(19, 65, 70), rgb(5, 12, 36));
+            /* justify-content: center; */
+            /* align-items: center; */
          }
          .container div
          {
              position: absolute;
+             top: 46%;
+             left: 48%;
+             right: 50%;
              width: 35px;
              height: 35px;
              background-image: radial-gradient(green,blue);
              border-radius: 50%;
-             margin: 10px;
+             /* margin: 10px; */
+             transition: all 2s ease 0.4s, 
+            /* tranform 1.5s ease-in 1.2s,  */
+            transform 2s ease 1s,
+            bottom 1.5s ease 1.5s, 
+            top 2s ease 6s;
          }
-         #one
+         .container:hover
          {
+            background-image: radial-gradient(rgb(73, 95, 14), rgb(5, 12, 36));
+         }
+         .container:hover div
+         {
+            filter: invert(100%);
+         }
+
+         
+        /* .container:hover #one, .container:hover #two
+         {
+             top: 5px;
+         } */
+         .container:hover #one
+         {
+            /* top: 5px; */
+            transform: translate(-380px, -185px);
+            top: 230px;
+            /* transition: right 5s ease-in-out 2s; */
+            /* transform: translateX(-80px); */
+            /* top: 30px; */
+            /* left: 30px; */
+         }
+         .container:hover #two
+         {
+            /* top: 5px; */
+            /* transform: translate(370px); */
+            /* top: 0; */
+            transform: translate(380px, -185px);
+            top: 230px;
 
          }
-         #two
+          .container:hover #three
          {
-
-         }
-         #three
-         {
-
-         }
+            transform: translate(-380px, 0px);
+            /* transform: translateY(170px); */
+             top: 360px;
+             /* left: 300px; */
+         } 
 
      </style>
  </head>
