@@ -31,38 +31,52 @@ https://css-tricks.com/almanac/properties/t/transition/
              right: 50%;
              width: 35px;
              height: 35px;
+             background-image: radial-gradient(rgb(117, 0, 128),blue);
+             border-radius: 50%;
+             /* margin: 10px; */
+             transition: all 0.5s ease 2s, 
+            /* tranform 1.5s ease-in 1.2s,  */
+            /* transform 1s ease 3s, */
+            /* bottom 5s ease 5s, */
+            top 3s ease 4s;
+         }
+         .container aside
+         {
+             position: absolute;
+             top: 46%;
+             left: 48%;
+             right: 50%;
+             width: 35px;
+             height: 35px;
              background-image: radial-gradient(green,blue);
              border-radius: 50%;
              /* margin: 10px; */
-             transition: all 2s ease 0.4s, 
+             transition: all 0.5s ease 3.5s, 
             /* tranform 1.5s ease-in 1.2s,  */
-            transform 2s ease 1s,
-            bottom 1.5s ease 1.5s, 
-            top 2s ease 6s;
+            /* transform 1s ease 3s, */
+            /* bottom 5s ease 5s, */
+            top 0.5s ease-in 4s;
          }
+
          .container:hover
          {
             background-image: radial-gradient(rgb(73, 95, 14), rgb(5, 12, 36));
+            /* filter: invert(100%); */
+            
          }
          .container:hover div
          {
             filter: invert(100%);
          }
-
-         
-        /* .container:hover #one, .container:hover #two
+         .container:hover aside
          {
-             top: 5px;
-         } */
+             filter: invert(100%);
+         }
          .container:hover #one
          {
-            /* top: 5px; */
             transform: translate(-380px, -185px);
             top: 230px;
             /* transition: right 5s ease-in-out 2s; */
-            /* transform: translateX(-80px); */
-            /* top: 30px; */
-            /* left: 30px; */
          }
          .container:hover #two
          {
@@ -78,7 +92,6 @@ https://css-tricks.com/almanac/properties/t/transition/
             transform: translate(-380px, 0px);
             /* transform: translateY(170px); */
              top: 360px;
-             /* left: 300px; */
          } 
 
      </style>
@@ -94,7 +107,8 @@ https://css-tricks.com/almanac/properties/t/transition/
      <div class="container">
         <div id="one"></div>
         <div id="two"></div>
-        <div id="three"></div>
+        <!-- <div id="three"></div> -->
+        <aside id="three"></aside>
      </div>
  </body>
  </html>
