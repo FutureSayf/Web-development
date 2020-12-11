@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html body {
+            height: 100%;
+            position: relative;
+            display: flex;
+            background-color:  #faf6e9 ;
+           
+        }
+
+        .menu {
+            position: fixed;
+            display: inline-block;
+            height: 1000px;
+            width: 15%;
+            background-color: #4B86CB;
+            top: 0;
+            left: 0;
+         
+            
+        }
+
+        .menu h1 {
+            text-align: center;
+            color: white;
+            border-bottom: white solid 2px;
+            padding-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu table {
+            margin-left: 10%;
+        }
+
+        .menu button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            color: white;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            position: absolute;
+            display: inline-block;
+            left: 250px;
+            margin: 20 10;
+            text-align: center;
+        }
+
+        .card td {
+            padding-left: 55px;
+        }
+
+        .info
+        {
+            
+            position: relative;
+            flex-wrap: wrap;
+            width: 550px;
+            height: 1000px;
+            left: 750px;
+            background-color: #faf6e9;
+            /* align-items: flex-start; */
+        }
+        .personal_info
+        {
+            /* display: inline-block; */
+            position: relative;
+            width: 550px;
+            height: 20%;
+            /* left: 50px; */
+            background-color: #faf6e9;
+            
+        }
+
+        h4 {
+            Margin-bottom: -17px;
+        }
+
+        .personal_info h4
+        {
+            position: relative;
+            background-color:  #4B86CB;
+            color:whitesmoke;
+            line-height: 20px;
+            bottom: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .personal_info td
+        {
+            border-bottom: 1px solid #4B86CB;
+            padding-top: 10px;
+        }
+        
+        .languages
+        {
+            /* display: inline-block; */
+            /* position: relative; */
+            width: 550px;
+            height: 20%;
+            background-color: #faf6e9;
+        
+            /* align-items: center; */
+        }
+        .languages h4
+        {
+            position: relative;
+            background-color:  #4B86CB;
+            color: whitesmoke;
+            line-height: 20px;
+            bottom: 20px;
+            border-radius: 5px 5px 0 0;
+           
+        }
+        .framework
+        {
+            /* display: inline-block; */
+            width: 550px;
+            height: 60%;
+            background-color: #faf6e9;
+        }
+        .framework h4
+        {
+           
+            background-color:  #4B86CB;
+            color: whitesmoke;
+            line-height: 20px;
+            bottom: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .framework img
+        {
+            
+            width: 550px;
+            height: 350px;
+            margin-top: 20px;
+        }
+
+        .ster {
+            padding-left: 200px;
+        }
+       
+        @media only screen and (max-width: 480px) {
+        .menu { width: 90%; height: auto;}
+        .menu tr { display: inline;}
+        /* img { width: 90%; height: auto; } */
+        .card { width: 100%; height: auto; left: 0; margin-top: 40%;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Menu aan linkerkant -->
+    <aside>
+        <nav>
+            <div class="menu">
+                <h1>MENU</h1>
+
+                <table>
+                    <tr>
+                        <td><button>&#128513 DASHBOARD</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>&#128541 USER PROFILE</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>&#129313 MEMBERS</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>&#129327 ASSIGNMENTS</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>&#129488 BLOGS</button></td>
+                    </tr>
+                    
+                </table>
+
+            </div>
+        </nav>
+    </aside>
+
+    <main>
+        <!-- Kaart met foto Kim Sing -->
+        <div class="card">
+            <img src="../IMG/kim.png" alt="kim Sing">
+            <h3>Kim Sing</h3>
+            <a href="https://www.linkedin.com/in/kim-sing-cheng-8046b32a/">@chengks</a>
+            <p>
+                "Being open minded of other <br> solutions gains better result than <br>using the first encountered <br>
+                solution"
+            </p>
+            <table>
+                <tr>
+                    <td>&#128077 +1000</td>
+                    <td>&#129293 +999</td>
+                    <td>&#128078 0</td>
+                </tr>
+            </table>
+            <img src="../IMG/grafiek.png" alt="grafiek">
+        </div>
+        </div>
+
+        <!-- Personal information (Formulier), Languages (Lijst), Framework (foto)-->
+    <div class="info">
+        <div class="personal_info">
+                <h4>Personal Information</h4>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td colspan="3">Kim Sing</td>
+                        <!-- <td></td> -->
+                        <td>Surname:</td>
+                        <td colspan="2">Cheng</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>40</td>
+                        <td>Sex:</td>
+                        <td>M</td>
+                        <td>Date of birth:</td>
+                        <td>01-01-1980</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td colspan="3">Osdorpplein 16</td>
+                        <td>Postal code:</td>
+                        <td>1234AB</td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td colspan="2">Amsterdam</td>
+                        <td>Country:</td>
+                        <td>NL</td>
+                        <td>Profession:</td>
+                        <td>Full stack developer</td>
+                    </tr>
+                    <tr>
+                        <td>Hobby:</td>
+                        <td>Table tennis</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div class="languages">
+            <h4>Languages</h4>
+            <table>
+                <tr>
+                    <td colspan="8">HTML:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9733&#9733</td>
+                </tr>
+                <tr>
+                    <td colspan="8">CSS:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9733&#9734</td>
+                </tr>
+                <tr>
+                    <td colspan="8">Javascript:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9733&#9733</td>
+                </tr>
+                <tr>
+                    <td colspan="8">Java:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9733&#9733</td>
+                </tr>
+                <tr>
+                    <td colspan="8">Kotlin:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9733&#9734</td>
+                </tr>
+                <tr>
+                    <td colspan="8">Groovy:</td>
+                    <td class="ster">&#9733&#9733&#9733&#9734&#9734</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="framework">
+            <h4>Frameworks & Tools</h4>
+            <div>
+                <img src="../IMG/WolkIT.jpg" alt="Woord_Wolk_Grafiek_Web_Development">
+            </div>
+        </div>
+    </div>
+
+    </main>
+</body>
+</html>
