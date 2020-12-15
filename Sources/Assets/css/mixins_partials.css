@@ -1,0 +1,47 @@
+.button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(blue));
+  background-image: linear-gradient(black, blue);
+  color: whitesmoke;
+  height: 50px;
+  width: 150px;
+  margin: 50px;
+  border-radius: 15px 15px;
+}
+
+.button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(black));
+  background-image: linear-gradient(blue, black);
+  color: white;
+  font-weight: bold;
+}
+
+.button2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(blue));
+  background-image: linear-gradient(black, blue);
+  color: whitesmoke;
+  height: 50px;
+  width: 150px;
+  margin: 50px;
+  border-radius: 15px 15px;
+}
+
+.button2:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(black));
+  background-image: linear-gradient(blue, black);
+  color: white;
+  font-weight: bold;
+}
+
+.Square {
+  width: 200px;
+  height: 200px;
+  background-color: #b5f0b5;
+  margin: 50px;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+.Square:hover {
+  background-color: #57ff57;
+}
+/*# sourceMappingURL=mixins_partials.css.map */
