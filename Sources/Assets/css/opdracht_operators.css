@@ -1,0 +1,40 @@
+.one {
+  height: 800px;
+  width: auto;
+}
+
+.two {
+  height: 500px;
+  width: auto;
+}
+
+.three {
+  height: 100px;
+  width: auto;
+}
+
+.four {
+  height: -100px;
+  width: auto;
+}
+
+.five {
+  height: 203px;
+  width: auto;
+}
+
+.six {
+  height: 751px;
+  width: auto;
+}
+
+.seven {
+  height: 30px / 5px;
+  width: 24px / 4;
+}
+
+.eight {
+  height: 6;
+  width: 6px;
+}
+/*# sourceMappingURL=opdracht_operators.css.map */
