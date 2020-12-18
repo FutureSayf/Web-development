@@ -15,21 +15,28 @@
 }
 @mixin square2
 {
+    display: inline-block;
     width: 200px;
     height: 200px;
-    // background-image: radial-gradient(rgb(137, 253, 137), green);
     background-color: rgb(181, 240, 181);
     margin: 50px;
-    transition: background-color 0.5s ease-in;
-    &:hover
-    {
-        background-color: rgb(87, 255, 87);
-    }
+    // transition: background-color 0.5s ease-in;
+    // &:hover
+    // {
+    //     background-color: rgb(87, 255, 87);
+    // }
+}
+@mixin square2hover
+{
+    transition: background-color 2s ease-in;
+    background-color: rgb(87, 255, 87);
+
 }
 
 .button
 {
     @include button-style();
+   
 }
 .button2
 {
@@ -38,4 +45,16 @@
 .Square
 {
     @include square2();
+    &:hover
+    {
+        @include square2hover();
+    }
+}
+.Square1
+{
+    @include square2();
+    &:hover
+    {
+        @include square2hover();
+    }
 }
