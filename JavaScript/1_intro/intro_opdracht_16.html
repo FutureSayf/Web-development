@@ -1,6 +1,11 @@
 <!-- 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#assignment_operators
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
 
+
+Arrays beginnen met 0 index!
  -->
 
 <!DOCTYPE html>
@@ -12,7 +17,50 @@
 </head>
 <body>
     <script>
-        
+        let xp      = "Hello world!";
+        let str1    = "Tech";
+        let str2    = "Grounds"; 
+
+        str3 = xp.slice(1, -2);
+        str4 = xp.slice(11); 
+        str5 = xp.slice(-12);
+
+        str6 = xp.split(' ');
+        str7 = xp.split('');
+        str8 = xp.split();
+
+        // voorbeeld van charAt
+        console.log("The char at index 0 = " + xp.charAt(0)); 
+        console.log("The char at index 1 = " + xp.charAt(1));
+        console.log("The char at index 2 = " + xp.charAt(2));
+        console.log("The char at index 3 = " + xp.charAt(3));
+        console.log("The char at index 4 = " + xp.charAt(4));
+
+        //  voorbeeld concat
+
+        console.log(str1.concat('world , is yours'));
+        console.log(str1.concat(' ',str2));
+        console.log(str2.concat(str1));
+
+        // voorbeeld slice
+        console.log(str3);
+        console.log(str4);
+        console.log(str5);
+
+        // voorbeeld split
+
+        console.log(str6[1]);
+        console.log(str7[4]);
+        console.log(str8);
+
+        // voorbeeld substr (eerste positie index, aantal char)
+
+        console.log(xp.substr(6, 5));
+
+
+
+
+
     </script>
     
 </body>
