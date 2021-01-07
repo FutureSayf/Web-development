@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_conditions_opdracht_1</title>
+</head>
+<body>
+    <input type="number" name="number" id="number">
+
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+    <div>
+        <span id="label"></span>
+    </div>
+    
+    <script>
+        function checkNumber()
+        {
+            let nr = document.getElementById('number').value;
+            let label = document.getElementById('label');
+            if (nr == 3)
+                {
+                    label.innerHTML = 'input is gelijk aan 3';
+                    // console.log('jaa');
+                }
+           else
+                {
+                    label.innerHTML = 'WRONG NUMBER.. TRY AGIAN!';
+                    // console.log("nope");
+                } 
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- 
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_conditions_opdracht_6</title>
+</head>
+<body>
+    <input type="number" name="number" id="number">
+
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+    <div>
+        <span id="label"></span>
+    </div>
+    
+    <script>
+        function checkNumber()
+        {
+            let nr = document.getElementById('number').value;
+            let label = document.getElementById('label');
+            if (nr != 3)
+                {
+                    label.innerHTML = 'NUMBER IS NOT EQUAL TO 3 :(';
+                    // console.log('jaa');
+                }
+                else
+                    {
+                        label.innerHTML = 'NUMBER IS 3!';
+                        // console.log("nope");
+                    } 
+
+        }
+    </script>
+    
+</body>
+</html>
