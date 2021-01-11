@@ -1,21 +1,9 @@
-<!-- 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-
-Vraag opdracht 8.
-
-== gelijk soort / x=5  x == 5 true, x == "5" true.
-
-=== gelijk aan soort en type  x === 5 true, x === "5" false
-
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS_conditions_opdracht_7</title>
+    <title>JS_conditions_opdracht_9</title>
 </head>
 <body>
     <input type="number" name="number" id="number">
@@ -31,14 +19,14 @@ Vraag opdracht 8.
         {
             let nr = document.getElementById('number').value;
             let label = document.getElementById('label');
-            if (nr == 3)
+            if (nr > 5 && nr < 10)
                 {
-                    label.innerHTML = 'NUMBER IS == 3';
+                    label.innerHTML = 'Het ingevoerde getal is tussen 5 en 10';
                     // console.log('jaa');
                 }
            else
                 {
-                    label.innerHTML = '';
+                    label.innerHTML = 'WRONG NUMBER.. TRY AGIAN!';
                     // console.log("nope");
                 } 
 

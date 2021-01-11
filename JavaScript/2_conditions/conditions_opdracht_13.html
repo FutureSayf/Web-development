@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_conditions_opdracht_13</title>
+</head>
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">Translate</button>
+    <div id="translateMonth"></div>
+
+    <script>
+
+        function translateMonth()
+        {
+            let nr = document.getElementById('number').value;
+            let label = document.getElementById('translateMonth');
+
+            if (nr == 1)
+                {
+                    label.innerHTML = '1 => January';
+                    // console.log('jaa');
+                }
+            if (nr == 2)
+                {
+                    label.innerHTML = '2 => February';
+                    // console.log('jaa');
+                }
+            if (nr == 3)
+                {
+                    label.innerHTML = '3 => March';
+                    // console.log('jaa');
+                }
+            if (nr == 4)
+                {
+                    label.innerHTML = '4 => April';
+                    // console.log('jaa');
+                }
+            if (nr == 5)
+                {
+                    label.innerHTML = '5 => May';
+                    // console.log('jaa');
+                }
+            if (nr == 6)
+                {
+                    label.innerHTML = '6 => June';
+                    // console.log('jaa');
+                }
+            if (nr == 7)
+                {
+                    label.innerHTML = '7 => Juli';
+                    // console.log('jaa');
+                }
+            if (nr == 8)
+                {
+                    label.innerHTML = '8 => August';
+                    // console.log('jaa');
+                }
+            if (nr == 9)
+                {
+                    label.innerHTML = '9 => September';
+                    // console.log('jaa');
+                }
+            if (nr == 10)
+                {
+                    label.innerHTML = '10 => Oktober';
+                    // console.log('jaa');
+                }
+            if (nr == 11)
+                {
+                    label.innerHTML = '11 => November';
+                    // console.log('jaa');
+                }
+            if (nr == 12)
+                {
+                    label.innerHTML = '12 => December';
+                    // console.log('jaa');
+                }
+                else
+                {
+                    label.innerHTML = 'WRONG NUMBER.. TRY AGIAN!';
+                    // console.log("nope");
+                } 
+
+        }
+    </script>
+</body>
+</html>

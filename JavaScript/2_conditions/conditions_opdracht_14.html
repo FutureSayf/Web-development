@@ -1,0 +1,77 @@
+<!-- 
+    https://www.w3schools.com/js/tryit.asp?filename=tryjs_switch2
+    https://www.w3schools.com/jsref/jsref_switch.asp
+    https://stackoverflow.com/questions/5464362/javascript-using-a-condition-in-switch-case
+    
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_conditions_opdracht_14</title>
+</head>
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">Translate</button>
+    <div id="translateMonth"></div>
+
+    <script>
+
+        function translateMonth()
+        {
+            let nr = document.getElementById('number').value;
+            let label = document.getElementById('translateMonth');
+            let text;
+
+           switch(nr)
+           {
+                case '1':
+                label.innerHTML = '1 => January';
+                break; 
+                case '2':
+                label.innerHTML = '2 => February';
+                break;  
+                case '3':
+                label.innerHTML = '3 => March';
+                break;  
+                case '4':
+                label.innerHTML = '4 => April';
+                break;  
+                case '5':
+                label.innerHTML = '5 => May';
+                break;  
+                case '6':
+                label.innerHTML = '6 => Juni';
+                break;  
+                case '7':
+                label.innerHTML = '7 => Juli';
+                break;  
+                case '8':
+                label.innerHTML = '8 => Augustes';
+                break;  
+                case '9':
+                label.innerHTML = '9 => September';
+                break;  
+                case '10':
+                label.innerHTML = '10 => Oktober';
+                break;  
+                case '11':
+                label.innerHTML = '11 => Novemeber';
+                break;  
+                case '12':
+                label.innerHTML = '12 => December';
+                break;  
+                default:
+                label.innerHTML = 'Hello';
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>
