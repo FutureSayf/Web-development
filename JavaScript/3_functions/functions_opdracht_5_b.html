@@ -1,0 +1,133 @@
+<!-- 
+<button onclick="guess(this)">
+                <div class="fg">Show</div>
+                <span>Money</span>
+            </button>
+
+
+            document.getElementById("label").innerHTML = "You have guessed the correct word!  " + guessingWord;
+
+
+            function randomnaam()
+            {
+                let nummer = Math.round(Math.random() * 8);
+                let nummer2 = math.random();
+                console.log(nummer);
+            }
+
+            function namen(number);
+            {
+                let name = "";
+                switch(number)
+                {
+                    case 1:
+                        name = "john";
+                        break;
+                    case 2:
+                        name = "tony"
+                        break;
+                }
+            }
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions_opdracht_5.b</title>
+</head>
+<body>
+   <h1>DataBase_NameID</h1>
+   <input type="text" name="text" id="text">
+   <button onclick="checkID()">CheckID</button><br>
+  
+   <input type="number" name="number" id="number">
+   <button onclick="random()">Random</button>
+  
+   <div id="checkID"></div>
+   <div id="random"></div>
+
+   <script>
+
+        const names = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+        const randomNames = names[Math.round(Math.random() * 4)];
+        console.log(randomNames);
+
+        function random()
+        {
+            let label = document.getElementById('random');
+            // let nr = document.getElementById('number').value;
+
+        
+            label.innerHTML = randomNames;
+            checkNr();
+            console.log(randomNames);
+
+        }
+        function checkNr()
+        {
+            let nr = document.getElementById('number').value;
+            let label1 = document.getElementById('random');
+            // text = text.toUpperCase();
+
+            if (nr == 1)
+                {
+                    label1.innerHTML = '1=John';
+                    checkID();
+                }
+                else if (nr == 2)
+                {
+                    label1.innerHTML = 'Olly';
+                    checkID();
+                }
+                else if (nr == 3)
+                {
+                    label1.innerHTML = 'Mo';
+                }
+                else if (nr == 4)
+                {
+                    label1.innerHTML = 'Hendrik';
+                }
+                else if (nr == 5)
+                {
+                    
+                    label1.innerHTML = 'TONY';
+                }
+                else if (nr == 6)
+                {
+                    label1.innerHTML = 'Irus';
+                }
+                else if (nr == 7)
+                {
+                    label1.innerHTML = 'Jan';
+                }
+                else if (nr == 8)
+                {
+                    label1.innerHTML = 'Peter';
+                }
+        }
+        function checkID()
+       {
+           let text = document.getElementById('text').value;
+           text = text.toUpperCase();
+           let label2 = document.getElementById('checkID');
+           // console.log(text);
+
+           if (text == "JOHN" || text == "OLLY" || text == "MO" || text == "HENDRIK" || text == "TONY")
+               {
+                   label2.innerHTML = 'Name is registered in Database: ' + text;
+                   // console.log('jaa');
+               }
+           else
+           {
+               label2.innerHTML = 'NAME IS NOT REGISTERED';
+           }
+
+       }
+
+   </script>
+    
+</body>
+</html>

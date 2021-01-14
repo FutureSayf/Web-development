@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions_opdracht_5.b</title>
+</head>
+<body>
+   <h1>DataBase_NameID</h1>
+   <input type="text" name="text" id="text">
+   <button onclick="checkID()">CheckID</button><br>
+  
+   <input type="number" name="number" id="number">
+   <button onclick="random()">Random</button>
+  
+   <div id="checkID"></div>
+   <div id="random1"></div>
+   
+
+   <script>
+
+        // const names = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+        const randomNames = names[Math.round(Math.random() * 4)];
+        console.log(randomNames);
+
+        function random()
+        {
+            let math = Math.round(Math.random() * 8);
+            console.log(math);
+            checkNr(math);
+
+        }
+        function checkNr(x)
+        {
+                let name = "";
+                switch(x)
+                {
+                    case 1:
+                        name = "John";
+                        break;
+                    case 2:
+                        name = "Olly"
+                        break;
+                    case 3:
+                        name = "FLO"
+                        break;
+                    case 4:
+                        name = "Hendrik"
+                        break;
+                    case 5:
+                        name = "Tony"
+                        break;
+                    case 6:
+                        name = "Irus"
+                        break;
+                    case 7:
+                        name = "Jan"
+                        break;
+                    case 8:
+                        name = "Peter"
+                        break;
+                }
+                console.log(name);
+                random1.innerHTML = name;
+        }
+        function checkID()
+       {
+           let text = document.getElementById('text').value;
+           text = text.toUpperCase();
+           let label2 = document.getElementById('checkID');
+           // console.log(text);
+
+           if (text == "JOHN" || text == "OLLY" || text == "MO" || text == "HENDRIK" || text == "TONY")
+               {
+                   label2.innerHTML = 'Name is registered in Database: ' + text;
+                   // console.log('jaa');
+               }
+           else
+           {
+               label2.innerHTML = 'NAME IS NOT REGISTERED';
+           }
+
+       }
+
+   </script>
+    
+</body>
+</html>

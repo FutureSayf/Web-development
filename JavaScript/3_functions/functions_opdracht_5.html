@@ -1,0 +1,45 @@
+<!-- 
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Functions_opdracht_5</title>
+ </head>
+ <body>
+    <h1>DataBase_NameID</h1>
+    <input type="text" name="text" id="text">
+    <button onclick="checkID()">CheckID</button>
+    <div id="checkID"></div>
+
+    <script>
+
+        // const words = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+
+        function checkID()
+        {
+            let text = document.getElementById('text').value;
+            text = text.toUpperCase();
+            let label = document.getElementById('checkID');
+            // console.log(text);
+
+            if (text == "JOHN" || text == "OLLY" || text == "MO" || text == "HENDRIK" || text == "TONY")
+                {
+                    label.innerHTML = 'Name is registered in Database: ' + text;
+                    // console.log('jaa');
+                }
+            else
+            {
+                label.innerHTML = 'NAME IS NOT REGISTERED';
+            }
+
+        }
+
+    </script>
+     
+ </body>
+ </html>

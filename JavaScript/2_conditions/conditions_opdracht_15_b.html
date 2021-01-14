@@ -1,16 +1,15 @@
 <!-- 
+https://www.w3schools.com/js/js_if_else.asp
 
-    https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash
-    reset game.
+
  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions_opdracht_15</title>
+    <title>Conditions_opdracht_15_b</title>
     <style>
         .words button {
             position: relative;
@@ -113,47 +112,46 @@
 
         function guess(obj) 
         {
-           let guess = obj.querySelector("span").innerText;
-           let counter = document.getElementById("count").textContent;
-            // let counter = 3;
-           console.log(guessingWord);
+            let guess = obj.querySelector("span").innerText;
+            let counter = document.getElementById("count").textContent;
+            // const lifes = 3;
 
-           if (guess == guessingWord)
-           {
-            document.getElementById("label").innerHTML = "You have guessed the correct word!  " + guessingWord;
-            location.reload(counter);
-
+            console.log(guessingWord);
+            
+            if (guess == guessingWord)
+            {
+                
+                document.getElementById("label").innerHTML = "You have guessed the correct word!  " + guessingWord;
+                // counter++;
+                location.reload();
+            
                
-           }
-           else if (counter < 3 && guess != guessingWord)
-           {
-               counter++;
-               document.getElementById("count").textContent=counter;
-               if (counter > 3)
+            }
+            else (counter < 4)
+            {
+                counter++;
+                document.getElementById("count").innerHTML = counter;
+                
+                if (counter == 4)
+                    {
+                        location.reload();
+                    }
+
+            }
+            if (counter == 3)
                 {
-                document.getElementById("label").innerHTML = "GAME OVER. The correct word is: " + guessingWord;
-            // setGameOver();
-             location.reload(counter);
-                } 
-           }
-          
-        //    if (counter == 4)
-        //    {
-        //     location.reload(counter);
-        //    }
+                    document.getElementById("label").innerHTML = "Game over. The word is  " + guessingWord;
+                    // location.reload();
+              
+                }
+            
            
 
 
+
+
         }
-        // function setGameOver() 
-        // {
-        //     guessField.disabled = true;
-        //     guessSubmit.disabled = true;
-        //     resetButton = document.createElement('button');
-        //     resetButton.textContent = 'Start new game';
-        //     document.body.append(resetButton);
-        //     resetButton.addEventListener('click', resetGame);
-        // }
+     
     </script>
 </body>
 
