@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays_opdracht_1 t/m 9</title>
+</head>
+<body>
+    <script>
+        //  vraag 1
+        let randomNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        console.log(randomNumbers[3]);
+        console.log(randomNumbers);
+
+        //  vraag 2
+        let fruits = ["Appel", "Peer", "Mango", "Banaan", "Kiwi", "Aardbei"];
+        console.log(fruits[3]);
+        console.log(fruits);
+
+        // vraag 3: Idex 0
+        console.log(fruits[0]);
+        // vraag 4: Index 5
+        console.log(fruits[5]);
+        // vraag 5:
+        let nr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let math = Math.floor(Math.random() * nr.length);
+        // randomNumbers[nr[math]];
+        if (math >= 6) 
+        {
+            math %= 2;
+        }
+
+        console.log(nr[math]);
+        console.log(fruits[math]);
+        // vraag 6
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+    const car = printcar();  functie heeft nieuwe naam gekregen car("v40")
+    car heeft parameters.
+
+    return function(parameters) function princar = car(v40)
+
+    console.log(volvo + spatie + parameter v40)
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes_opdracht_4</title>
+</head>
+<body>
+    <script>
+       
+        function printCar()
+        {
+            carBrand = "Volvo";
+            
+            return function(type)
+            {
+                console.log(carBrand + " " + type);
+            }
+        }
+
+        const car = printCar();
+        car("v40");
+        
+    </script>
+    
+</body>
+</html>
