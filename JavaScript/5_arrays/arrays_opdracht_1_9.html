@@ -17,10 +17,15 @@
         console.log(fruits[3]);
         console.log(fruits);
 
+        
         // vraag 3: Idex 0
         console.log(fruits[0]);
+        
+        
         // vraag 4: Index 5
         console.log(fruits[5]);
+        
+        
         // vraag 5:
         let nr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         let math = Math.floor(Math.random() * nr.length);
@@ -28,11 +33,72 @@
         if (math >= 6) 
         {
             math %= 2;
+            // math % fruits;
         }
-
         console.log(nr[math]);
         console.log(fruits[math]);
-        // vraag 6
+        
+        
+        // vraag 6: Zoek uit wat push(), pop(), shift(), slice(), splice(),sort(). 
+
+
+        // Maak gebruik van de fruits array en maak voor elke functie een voorbeeld en geef in commentaar wat het doet.
+        // The push() method adds new items to the end of an array, and returns the new length.
+        // Note: The new item(s) will be added at the end of the array.
+        // Note: This method changes the length of the array.
+        // Tip: To add items at the beginning of an array, use the unshift() method.
+
+        fruits.push("mango", "banaan", "appel")
+        console.log(fruits);
+
+        // The pop() method removes the last element of an array, and returns that element.
+        // Note: This method changes the length of an array.
+        // Tip: To remove the first element of an array, use the shift() method.
+        fruits.pop()
+        console.log(fruits);
+
+        // The shift() method removes the first item of an array.
+        // Note: This method changes the length of the array. Note: The return value of the shift method is the removed item.
+        // Tip: To remove the last item of an array, use the pop() method.
+        fruits.shift()
+        console.log(fruits);
+
+        // The slice() method returns the selected elements in an array, as a new array object.
+        // The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+        // Note: The original array will not be changed.
+        
+        var slice = fruits.slice(1, 4);
+        // fruits.slice(1, 4)
+        console.log(slice);
+
+        // The splice() method adds/removes items to/from an array, and returns the removed item(s).
+        // fruits.splice(2, 0, "Lemon", "Kiwi");
+        // 
+        fruits.splice(2, 0, "red", "blue")
+        console.log(fruits);
+
+        // he sort() method sorts the items of an array. he sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+        // By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+        // This works well for strings ("Apple" comes before "Banana"). However, if numbers are sorted as strings,
+        // "25" is bigger than "100", because "2" is bigger than "1".
+        // https://www.w3schools.com/jsref/jsref_sort.asp
+
+        fruits.sort()
+        console.log(fruits);
+
+        // VRAAG 7
+        // The length property sets or returns the number of elements in an array.
+        //  https://www.w3schools.com/jsref/jsref_length_array.asp
+
+        // fruits.length;
+        console.log(fruits.length);
+
+        // VRAAG 8
+
+        // 
+        // 
+        // 
+
         
     </script>
     
