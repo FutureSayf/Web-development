@@ -7,15 +7,31 @@
 </head>
 <body>
     <script>
-        let i;
-        let swap;
+	 
+	function bubbleSort(x)
+	{
+		for (let i = 0; i < x.length -1; i++)
+		{
+			for (let j = 0; j < x.length - 1 - i; j++)
+			{
+				if (x[j] > x[j+1])
+				{
+					const temp = x[j];
+					x[j] = x[j+1];
+					x[j+1] = temp;
+				}
+			}
+		}
+		return x;
+	}
 
-        i = 0;
-        while (i < size - 1)
-        {
-
-        }
-
+	// let tab = [];
+	let tab = [1, 4, 32, 3, 64, 17, 7, 88, 55, 78, 101, 2, 57869];
+	bubbleSort(tab);
+	console.log(bubbleSort(tab));
+	// console.log(bubbleSort([1, 4, 32, 3, 64, 17, 7, 88, 55, 78, 101, 2, 57869]));
+	// https://www.youtube.com/watch?v=IAeLoGzU4RE
+       
 
     </script>
 </body>
