@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects_opdracht_1_2_3</title>
+</head>
+<body>
+    <div id="clubs" class="clubs"></div>
+
+    <script>
+        // opdracht 1
+
+        function ClubInfo(name, sport, members, adres, phone, contact)
+        {
+            this.name = name;
+            this.sport = sport;
+            this.members = members;
+            this.contact = new ClubContact(adres, phone, contact);
+            this.updateMembers = function()
+            {
+                return ++this.members;
+            };
+        }
+        // opdracht 2
+
+        function ClubContact(adres, phone, contact)
+        {
+            this.adres = adres;
+            this.phone = phone;
+            this.contact = contact;
+        }
+        // new club invoer
+        let club01 = new ClubInfo("Lakers", "Basketball", 24);
+        let club02 = new ClubInfo("S.V. Robinhood", "Soccer", 34);
+        let club03 = new ClubInfo("InterMoengotapoe", "Soccer", 50);
+        let club04 = new ClubInfo("S.V. Transvaal", "Soccer", 28);
+        //  New club contact invoer
+        let contact01 = new ClubContact("arena", "+311055533", "Amian");
+        let contact02 = new ClubContact("arena", "+311055533", "Amian");
+        let contact03 = new ClubInfo("LondonBoys","Soccer", 55, "arena", "+311055533", "Amian");
+        // new Object []array
+        const clubs = [club01, club02, club03, club04];
+        
+        // LOGS
+        // console.log(clubContact01.adres);
+        console.log(clubs[1].name);
+        for (i = 0; i < clubs.length; i++)
+        {
+            console.log(clubs[i].name);
+        }
+        console.log(contact03.contact);
+
+    </script>
+</body>
+</html>
+<!-- 
+    Opdracht 1:
+Maak een Object die club informatie bijhoudt:
+● Naam van de club
+● Type sport
+● Aantal leden
+
+Opdracht 2:
+Maak een Object van contactgegevens en voeg dat ook toe aan de club object:
+● Contactgegevens
+○ Adres
+○ Telefoonnr
+○ Contactpersoon
+
+Opdracht 3:
+Het is heel gebruikelijk dat dezelfde objecten in een lijst staan. Maak een lijst aan en voeg 4
+Club objecten toe aan de lijst. Itereer over de lijst heen en print de verschillende clubnamen
+uit op jouw pagina.
+
+https://www.youtube.com/watch?v=e1yBONtbTuA&list=LL&index=1&t=20s
+
+https://www.youtube.com/watch?v=X0ipw1k7ygU
+
+https://www.youtube.com/watch?v=tVq4L8tnWuA
+
+
+ -->

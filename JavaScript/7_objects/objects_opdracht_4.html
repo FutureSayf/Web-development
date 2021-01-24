@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects_opdracht_4</title>
+</head>
+<body>
+    <div id="clubs" class="clubs"></div>
+    <script>
+
+        const Person = function(name, age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+        const persons = [
+            new Person("Tony", 38),
+            new Person("Ben", 3),
+            new Person("Jerry", 8),
+            new Person("Anthony", 56),
+            new Person("Ronaldo", 78),
+            new Person("Henry", 18),
+            new Person("Lebron", 23),
+            new Person("Mono", 28),
+
+        ]
+
+        for(i =0; i < persons.length; i++)
+        {
+            // persons.sort;
+            console.log(persons[i]);
+        }
+    </script>
+    
+</body>
+</html>
