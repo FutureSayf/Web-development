@@ -26,12 +26,28 @@
 
         ]
 
-        for(i =0; i < persons.length; i++)
+        // for(i =0; i < persons.length; i++)
+        // {
+        //     // persons.sort;
+        //     console.log(persons[i]);
+        // }
+        const sortedByAge = persons.sort(function(a, b)
         {
-            // persons.sort;
-            console.log(persons[i]);
-        }
+            return a.age - b.age;
+           
+        });
+        console.log(sortedByAge);
+
     </script>
     
 </body>
 </html>
+<!-- 
+    https://www.youtube.com/watch?v=BbuLjEqFlw0
+
+
+    https://medium.com/@gmcharmy/sort-objects-in-javascript-e-c-how-to-get-sorted-values-from-an-object-142a9ae7157c
+
+    
+
+ -->

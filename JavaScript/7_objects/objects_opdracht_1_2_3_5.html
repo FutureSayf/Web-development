@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects_opdracht_1_2_3</title>
+    <title>Objects_opdracht_1_2_3_5</title>
 </head>
 <body>
     <div id="clubs" class="clubs"></div>
@@ -30,6 +30,15 @@
             this.phone = phone;
             this.contact = contact;
         }
+        // 
+        // opdracht 5 Object initializer VS Object Constructor
+
+        let team = {
+            name: "Techgrounds",
+            students: 18,
+            location: "Rotterdam"
+        }
+
         // new club invoer
         let club01 = new ClubInfo("Lakers", "Basketball", 24);
         let club02 = new ClubInfo("S.V. Robinhood", "Soccer", 34);
@@ -44,6 +53,7 @@
         
         // LOGS
         // console.log(clubContact01.adres);
+        console.log(team);
         console.log(clubs[1].name);
         for (i = 0; i < clubs.length; i++)
         {
@@ -79,5 +89,11 @@ https://www.youtube.com/watch?v=X0ipw1k7ygU
 
 https://www.youtube.com/watch?v=tVq4L8tnWuA
 
+Opdracht 5:
 
+Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel
+de voor en nadelen t.o.v Object constructors? Antwoord
+
+The constructor function is used for multiple entries under the same "object". 
+The object initializer should only be used for a limited amount of entries, for example 3.
  -->
