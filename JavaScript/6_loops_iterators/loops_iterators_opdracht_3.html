@@ -10,15 +10,15 @@
     
     <script>
         const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"]
-        var text = "";
-        var i;
+        // var text = "";
+        // var i; overbodige stappen
 
-        for (i = 0; i < sports.length; i += 2)
+        for (i = 1; i < sports.length; i += 2)
         {
-            text += sports[i] + "<br>";
+            // text += sports[i] + "<br>";
+            console.log(sports[i]);
+            document.write(sports[i] + " ");
         }
-        document.write(text);
-        console.log(text);
     </script>
     
 </body>
