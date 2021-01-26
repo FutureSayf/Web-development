@@ -1,24 +1,31 @@
 body
 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
    
 }
 #container
 {
-	width: 350px;
-	height: 540px;
-	background-image: linear-gradient(rgba(9, 160, 140, 0.3),rgba(19, 192, 204, 0.603)), url(/Web-development/Sources/IMG/);
-	margin: 20px auto;	
+	width: 300px;
+	height: 500px;
+	/* background-image: linear-gradient(rgba(9, 160, 140, 0.3),rgba(19, 192, 204, 0.603)), url(/Web-development/Sources/IMG/codewars.jpg); */
+	/* background-image: url(/Web-development/Sources/IMG/codewars.jpg); */
+	background-image: url(/Web-development/Sources/IMG/starmil.txt);
+	/* margin: 20px auto;	 */
+	margin: 0 auto;
+	top: 50px;
+	position: relative;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 #calculator
 {
 	width: 300px;
 	height: 500px;
-    background-color: #0000006b;
+	background-color: #0000007c;
 	margin: 0 auto;
-	top: 20px;
+	/* top: 10px; */
 	position: relative;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -26,7 +33,7 @@ body
 }
 #result{
     height: 120px;
-    background-color: rgb(69, 69, 85);
+    background-color: rgba(41, 41, 93, 0.507);
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
@@ -47,12 +54,19 @@ body
 }
 #keyboard{
 	height: 400px;
+	width: 300px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	/* min-height: 400px; */
+	grid-template-columns: repeat(4, 70px);
+	grid-template-rows: repeat(4, 70px);
+
 }
-
-
 .operator, .number{
 	width: 60px;
 	height: 60px;
+	outline: none;
 	margin: 5px;
 	float: left;
 	border-radius: 50%;
@@ -61,10 +75,16 @@ body
 	font-size: 15px;
 }
 .number{
-	background-color: #334a5a;
+	background-color: rgba(47, 231, 255, 0.157);
+}
+.operator{
+	background-color: rgba(47, 255, 127, 0.137);
 }
 .number, .operator{
 	cursor: pointer;
+}
+.span-two{
+	grid-column: span 2;
 }
 /* .operator:active, .number:active{
 	font-size: 13px;
@@ -76,19 +96,19 @@ body
 
 button:nth-child(4){
 	font-size: 20px;
-	background-color: rgba(172, 255, 47, 0.986);
+	background-color: rgba(172, 255, 47, 0.233);
 }
 button:nth-child(8){
 	font-size: 20px;
-	background-color: rgba(172, 255, 47, 0.986);
+	background-color: rgba(172, 255, 47, 0.233);
 }
 button:nth-child(12){
 	font-size: 20px;
-	background-color: rgba(172, 255, 47, 0.986);
+	background-color: rgba(172, 255, 47, 0.233);
 }
 button:nth-child(16){
 	font-size: 20px;
-	background-color: rgba(172, 255, 47, 0.986);
+	background-color: rgba(172, 255, 47, 0.233);
 }
 button:nth-child(17){
     width: 130px;
