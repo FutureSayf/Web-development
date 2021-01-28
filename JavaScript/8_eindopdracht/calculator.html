@@ -16,38 +16,38 @@
 
             <div id="result">
                 <div id="history">
-                    <p id="history-value">45456</p>
+                    <p id="history-value"></p>
                 </div>
                 
                 <div id="output">
-                    <p id="output-value">454546</p>
+                    <p id="output-value"></p>
                 </div>
             </div>
 
             <div id="keyboard">
-                <button class="operator" id="clear">AC</button>
+                <button class="operator" onclick="clearAll('')" id="clear">AC</button>
                 <button class="operator" id="positive_negative">+/-</button>
-                <button class="operator" id="%">%</button>
-                <button class="operator" id="/">&#247;</button>
+                <button class="operator" onclick="display('%')">%</button>
+                <button class="operator" onclick="display('/')">&#247;</button>
 
-                <button class="number" id="7">7</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="9">9</button>
-                <button class="operator" id="*">&times;</button>
+                <button class="number" onclick="display('7')">7</button>
+                <button class="number" onclick="display('8')">8</button>
+                <button class="number" onclick="display('9')">9</button>
+                <button class="operator" onclick="display('*')">&times;</button>
                 
-                <button class="number" id="4">4</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="6">6</button>
-                <button class="operator" id="-">-</button>
+                <button class="number" onclick="display('4')">4</button>
+                <button class="number" onclick="display('5')">5</button>
+                <button class="number" onclick="display('6')">6</button>
+                <button class="operator" onclick="display('-')">-</button>
                 
-                <button class="number" id="1">1</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id="3">3</button>
-                <button class="operator" id="+">+</button>
+                <button class="number" onclick="display('1')">1</button>
+                <button class="number" onclick="display('2')">2</button>
+                <button class="number" onclick="display('3')">3</button>
+                <button class="operator" onclick="display('+')">+</button>
                 
-                <button class="number span-two" id="0">0</button>
-                <button class="number" id=".">.</button>
-                <button class="operator" id="=">=</button>
+                <button class="number span-two" onclick="display('0')">0</button>
+                <button class="number" onclick="display('.')" id=".">.</button>
+                <button class="operator" onclick="solve()">=</button>
                
                 
             </div>
@@ -65,10 +65,7 @@
 </html>
 
 <!-- 
-    <div class="output">
-            <div class="previous-operand"></div>
-            <div class="current-operand"></div>
-        </div>
+    
 
         <button>AC</button>
         <button>+/-</button>
