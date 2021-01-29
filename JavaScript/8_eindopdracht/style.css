@@ -84,6 +84,11 @@ body
 .number{
 	background-color: rgba(47, 231, 255, 0.157);
 }
+.number:active
+{
+	background-color: cyan;
+	font-size: 20px;
+}
 .operator{
 	background-color: rgba(47, 255, 127, 0.137);
 }
@@ -105,18 +110,42 @@ button:nth-child(4){
 	font-size: 20px;
 	background-color: rgba(172, 255, 47, 0.233);
 }
+button:nth-child(4):hover{
+	font-size: 40px;
+	background-color: rgba(246, 156, 12, 0.233);
+	color: rgba(0, 0, 255, 0.281);
+}
+
 button:nth-child(8){
 	font-size: 20px;
 	background-color: rgba(172, 255, 47, 0.233);
 }
+button:nth-child(8):hover{
+	font-size: 40px;
+	background-color: rgba(246, 156, 12, 0.233);
+	color: rgba(0, 0, 255, 0.281);
+}
+
 button:nth-child(12){
 	font-size: 20px;
 	background-color: rgba(172, 255, 47, 0.233);
 }
+button:nth-child(12):hover{
+	font-size: 40px;
+	background-color: rgba(246, 156, 12, 0.233);
+	color: rgba(0, 0, 255, 0.287);
+}
+
 button:nth-child(16){
 	font-size: 20px;
 	background-color: rgba(172, 255, 47, 0.233);
 }
+button:nth-child(16):hover{
+	font-size: 40px;
+	background-color: rgba(246, 156, 12, 0.233);
+	color: rgba(0, 0, 255, 0.322);
+}
+
 button:nth-child(17){
     width: 130px;
     height: 60px;
@@ -128,4 +157,10 @@ button:nth-child(17){
 button:nth-child(19){
 	font-size: 20px;
 	background-color: rgba(172, 255, 47, 0.986);
+}
+button:nth-child(19):hover{
+	font-size: 35px;
+	background-color: rgba(172, 255, 47, 0.109);
+	color: rgba(51, 179, 190, 0.705);
+	
 }
