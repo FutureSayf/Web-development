@@ -92,6 +92,10 @@ body
 .operator{
 	background-color: rgba(47, 255, 127, 0.137);
 }
+.operator:hover{
+	background-color: rgba(255, 123, 47, 0.322);
+	font-size: 20px;
+}
 .number, .operator{
 	cursor: pointer;
 }
