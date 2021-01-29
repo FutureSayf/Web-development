@@ -8,7 +8,8 @@
 
 
 
-function clearAll() {
+function clearAll() 
+{
     document.getElementById("output-value").innerHTML = "0";
 }
 function removeZero() {
@@ -18,16 +19,29 @@ function removeZero() {
         document.getElementById("output-value").innerHTML = value;
     }
 }
-function procent() {
-    let value = document.getElementById("ooutput-value").innerHTML;
+function negative()
+{
+    let value = document.getElementById("output-value").innerHTML;
+
+    document.getElementById("output-value").innerHTML = -Math.abs(value);
+    if (value == -Math.abs(value))
+    {
+        document.getElementById("output-value").innerHTML = Math.abs(value);
+    }
+   
+}
+function procent() 
+{
+    let value = document.getElementById("output-value").innerHTML;
     value = value / 100;
-    document.getElementById("output-valuet").innerHTML = value;
+    document.getElementById("output-value").innerHTML = value;
 }
 function display(myvalue) {
     removeZero()
     document.getElementById("output-value").innerHTML += myvalue;
 }
-function solve() {
+function solve() 
+{
     removeZero()
     let equation = document.getElementById("output-value").innerHTML;
     let solved = eval(equation);
