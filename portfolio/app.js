@@ -1,0 +1,27 @@
+const navslide = () =>
+{
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+    
+    burger.addEventListener('click', ()=>
+    {
+        // toggle nav
+        nav.classList.toggle('nav-active');
+      
+        // Animate Links
+        navLinks.forEach((link, index) => 
+        {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
+        console.log(index / 7);
+        });
+
+    });
+
+}
+navslide();
+// const app = ()=>
+// {
+//     // roep al je functies aan
+//     navslide();
+// }
