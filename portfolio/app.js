@@ -41,15 +41,15 @@ let typewriter = new Typewriter(app,
             loop: true
         });
 
-typewriter.typeString('a Creative mind')
+typewriter.typeString('<strong>a Creative mind</strong>')
     .pauseFor(1000)
     .deleteAll()
 
-    .typeString('"Lost in Space"')
+    .typeString('"Lost in <strong>Space</strong>"')
     .pauseFor(2500)
     .deleteAll()
 
-    .typeString('<strong>Guided</strong> by Light')
+    .typeString('<strong>Guided</strong> by <strong>Light</strong>')
     .pauseFor(2500)
     .deleteAll()
 
@@ -69,7 +69,7 @@ typewriter.typeString('a Creative mind')
     .pauseFor(2500)
     .deleteAll()
 
-    .typeString('I')
+    .typeString('<strong>I</strong>')
     .pauseFor(3000)
     .deleteAll()
 
