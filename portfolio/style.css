@@ -128,7 +128,7 @@ nav{
 .introtext h1{
     text-align: center;
     font-size: 70px;
-    opacity: 40%;
+    opacity: 85%;
 }
 #app{
     text-align: center;
@@ -138,20 +138,23 @@ nav{
 #intro{
     text-align: center;
     font-size: 85px;
-    opacity: 40%;
+    opacity: 75%;
 }
 
-.box1{
-    /* width: 520px; */
+/* .box1{
+    
     width: 25%;
-    /* height: 800px; */
+    
     height: 860px;
     background-image: url(/Web-development/Sources/portfolio/Pinkpalm.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
     opacity: 80%;
-}
+} */
+
+
+
 /* .box1 img{
     width: 400px;
     height: 800px;
@@ -169,46 +172,107 @@ nav{
     justify-content: center;
     align-items: center;
     /* background-color: black; */
+    /* background-image: url(/Web-development/Sources/portfolio/FromAbove.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 
     
 }
-.messageBox{
-    width: 40%;
-    height: 80%;
-    margin-left: 2%;
-    background-color: brown;
-}
-.containerAvatar{
-    /* width: 50%;
-    display: inline-flex;
-    flex-wrap: wrap; */
-    display: flex;
-    width: 40%;
-    height: 80%;
+    .testblok{
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(130, 198, 238);
+        /* background-color: white; */
+        /* background-image: url(/Web-development/Sources/portfolio/wall.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+       
 
-    /* background-color: rgb(205, 255, 230); */
-    justify-content: left;
-    align-items: center;
-
-    background-image: url(/Web-development/Sources/portfolio/wall.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 60%;
-
-}
-.avatarImg{
-    width: 50%;
-    height: 100%;
-    background-image: url(/Web-development/Sources/portfolio/greypalm.jpg);
-    /* background-image: url(/Web-development/Sources/portfolio/tropicpalm.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 30%;
+    }
 
 
-}
+    .messageBox{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        height: 80%;
+        /* margin-left: 2%; */
+        background-color: rgba(165, 42, 42, 0.767);
+    
+    }
+    .idfoto{
+        width: 50%;
+        height: 50%;
+        /* flex: 1 0 0; */
+        background-color: yellowgreen;
+    }
+    .nawinfo{
+        width: 50%;
+        height: 50%;
+        /* flex: 1 0 0; */
+        background-color: turquoise;
+    }
+    
+    
+    
+    .skill{
+        width: 100%;
+        height: 50%;
+        /* flex: 2 0 0; */
+        background-color: thistle;
+    }
+
+
+
+
+    .containerAvatar{
+        /* width: 50%;
+        display: inline-flex;
+        flex-wrap: wrap; */
+        display: flex;
+        width: 40%;
+        height: 80%;
+
+        /* background-color: rgb(205, 255, 230); */
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        background-image: url(/Web-development/Sources/portfolio/wall.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 80%;
+
+    }
+            .avatarImg{
+                width: 50%;
+                height: 100%;
+                background-image: url(/Web-development/Sources/portfolio/greypalm.jpg);
+                /* background-image: url(/Web-development/Sources/portfolio/tropicpalm.jpg); */
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 30%;
+
+
+            }
+            .avaImg{
+                width: 50%;
+                height: 100%;
+                background-color: rgba(40, 194, 40, 0.342);
+                /* background-image: url(/Web-development/Sources/portfolio/greypalm.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 30%; */
+            
+            
+            }
 
 
   
