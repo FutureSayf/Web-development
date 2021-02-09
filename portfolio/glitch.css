@@ -8,17 +8,7 @@
     opacity: 80%;
 } */
 
-
-
-
-
-/* .glitch {
-	position: relative;
-    overflow: hidden;
-    
-    width: 25%;
-    height: 860px;
-} */
+/* GLITCH EFFECT ON MAIN PAGE PINK PALM IT-ROCKSTARS******************************************************************************* */
 
 
 .glitch{
@@ -31,7 +21,7 @@
     background-position: right;
     background-size: cover;
     height: 860px;
-    opacity: 80%;
+    opacity: 82%;
     width: 25%;
 }
 .glitch__layers {
@@ -58,15 +48,17 @@
 }
 .glitch__layer:nth-child(1) {
 	transform: translateX(-5%);
-	animation: glitch-anim-1 2s infinite linear alternate;
+    /* animation: glitch-anim-1 2s infinite linear alternate; */
+    animation: glitch-anim-1 2s infinite linear alternate;
 }
 .glitch__layer:nth-child(2) {
 	transform: translateX(3%) translateY(3%);
-	animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
+    /* animation: glitch-anim-2 2.3s -.8s infinite linear alternate; */
+    animation: glitch-anim-2 2s -.1s infinite linear alternate;
 }
 .glitch__layer:nth-child(3) {
 	transform: translateX(5%);
-	animation: glitch-anim-flash 1s infinite linear;
+	animation: glitch-anim-flash 3s infinite linear;
 }
 @keyframes glitch-anim-1 {
 	0% {

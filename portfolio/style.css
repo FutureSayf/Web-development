@@ -113,6 +113,8 @@ nav{
     
     background-image: url(/Web-development/Sources/portfolio/wall.jpg);
     background-repeat: no-repeat;
+    /* background-position: top; */
+    /* background-position: center; */
     background-position: right;
     background-size: cover;
     
@@ -128,17 +130,17 @@ nav{
 .introtext h1{
     text-align: center;
     font-size: 70px;
-    opacity: 85%;
+    /* opacity: 85%; */
 }
 #app{
     text-align: center;
     font-size: 70px;
-    opacity: 75%;
+    opacity: 85%;
 }
 #intro{
     text-align: center;
     font-size: 85px;
-    opacity: 75%;
+    opacity: 85%;
 }
 
 /* .box1{
@@ -209,13 +211,35 @@ nav{
         width: 50%;
         height: 50%;
         /* flex: 1 0 0; */
-        background-color: yellowgreen;
+        background-color: rgb(190, 113, 113);
+        /* background-image: url(/Web-development/Sources/portfolio/Graffiti.jpg); */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .photobox{
+        width: 75%;
+        height: 75%;
+        background-image: url(/Web-development/Sources/portfolio/ID_photo_black.png);
+        background-position: top;
+        /* background-size: 90%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+
     }
     .nawinfo{
         width: 50%;
         height: 50%;
         /* flex: 1 0 0; */
         background-color: turquoise;
+        
+        
+    }
+    table{
+        border-spacing: 0.5rem;
     }
     
     
@@ -225,6 +249,7 @@ nav{
         height: 50%;
         /* flex: 2 0 0; */
         background-color: thistle;
+        text-align: center;
     }
 
 
@@ -244,7 +269,7 @@ nav{
 
         background-image: url(/Web-development/Sources/portfolio/wall.jpg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: cover;
         opacity: 80%;
 

@@ -107,7 +107,7 @@ typewriter.typeString('<strong>a Creative mind</strong>')
     .deleteAll()
 
     .pauseFor(500)
-    .typeString('I <strong>AM</strong> Future.Sayf')
+    .typeString('I <strong>AM</strong> <strong>Future.Sayf</strong>')
     .pauseFor(2500)
     // .deleteAll()
 
