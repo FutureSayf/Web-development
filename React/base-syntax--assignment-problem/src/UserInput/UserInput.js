@@ -1,15 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-const userInput = (props) => {
-    const inputStyle ={
-        border: '2px solid red'
-        // inline style , scoped this only
-    };
-    return <input 
-    type="text"
-    style={inputStyle} 
-    onChange={props.changed} 
-    value={props.currentName} />
-};
+const UserInput = (props) =>{
+    const style = {
+        border: '2px solid blue'
+    }
+    return(
+        <input 
+        onChange={props.change}
+        value={props.currentName}
+        type='text'
+        style={style}/>
+    );
+}
 
-export default userInput;
+export default UserInput;
