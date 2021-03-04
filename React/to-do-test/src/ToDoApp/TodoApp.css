@@ -1,0 +1,65 @@
+* {
+    text-align: center;
+    font-family: "Neucha", cursive;
+  }
+  .TodoList {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(201, 200, 200);
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 20px;
+    width: 350px;
+    height: 450px;
+    box-shadow: 14px 5px 5px 5px #B8B8B8;
+    font-family: "Neucha", cursive;
+  }
+  input {
+    /* background-color: red; */
+    width: 60%;
+    align-self: center;
+    font-size: 20px;
+  }
+  .TodoList_title {
+    color: rgb(149, 223, 149);
+    align-self: left;
+  }
+  .btn {
+    margin-top: 13px;
+    width: 80%;
+    background-color: rgb(149, 223, 149);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-self: center;
+    font-size: 20px;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  .btn:focus {
+    border: none;
+  }
+  .TodoList_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    align-content: center;
+  }
+  .TodoList_items button {
+    font-size: 25px;
+    border: none;
+    background-color: white;
+  }
+  .TodoList_items button:hover {
+    cursor: pointer;
+  }
+  .TodoList_items button:focus {
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    outline: none;
+  }
