@@ -25,7 +25,8 @@ const tileContent = ({ activeStarDate, date, view }) => {
 
 
 function App() {
-  const [value, setValue] = useState(new Date());
+  const [value] = useState(new Date());
+  // [value, setValue] 
   const [toggleState, setToggleState] = useState("off");
   
   function toggle() {
@@ -33,12 +34,10 @@ function App() {
     setToggleState(toggleState === "off" ? "on" : "off");
   }
   
-  function onChange(nextValue) {
-    setValue(nextValue);
-  }
-  // toggleTodoApp = () => {
-  //   visible = false;
-  // };
+  // function onChange(nextValue) {
+  //   setValue(nextValue);
+  // }
+ 
   return (
     <div className="App">
       <Calendar className="Calendar" tileContent={tileContent} value={value} onClickDay={toggle} />
