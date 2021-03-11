@@ -1,0 +1,9 @@
+.card_wrapper{
+    margin: 50px;
+    height: 400px;
+    width: 200px;
+    background-color: cadetblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
