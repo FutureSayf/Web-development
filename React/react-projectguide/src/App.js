@@ -3,6 +3,7 @@ import './App.css';
 
 import {getWeatherData} from './Components/WeatherInfo/WeatherInfo';
 import WeatherCard from './Components/WeatherCard/WeatherCard'
+import WeatherDetail from './Components/WeatherDetail/WeatherDetail';
 
 
 
@@ -15,6 +16,7 @@ import WeatherCard from './Components/WeatherCard/WeatherCard'
 
       <WeatherCard city="Istanbul"/>
       <WeatherCard city="Amsterdam"/>
+      <WeatherDetail />
 
     </div>
    
