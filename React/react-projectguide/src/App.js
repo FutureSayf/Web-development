@@ -16,7 +16,7 @@ import WeatherDetail from './Components/WeatherDetail/WeatherDetail';
 
       <WeatherCard city="Istanbul"/>
       <WeatherCard city="Amsterdam"/>
-      <WeatherDetail />
+      <WeatherDetail  />
 
     </div>
    
