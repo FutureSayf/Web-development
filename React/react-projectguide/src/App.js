@@ -9,19 +9,21 @@ import WeatherDetail from './Components/WeatherDetail/WeatherDetail';
 
 
 
- const App = () => {
- 
+const App = () => {
+  const [toggleState, setToggleState] = useState("off");
+  function toggle() {
+    setToggleState(toggleState === "off" ? "on" : "off");
+  }
   return (
     <div className="App">
-
-      <WeatherCard city="Istanbul"/>
-      <WeatherCard city="Amsterdam"/>
-      <WeatherDetail  />
-
+      <div className="Weather_card">
+        {/* <WeatherCard city="Dubai" click={toggle} /> */}
+        <WeatherCard city="Amsterdam" click={toggle} />
+        {toggleState === "off" ? null : <WeatherDetail />}
+      </div>
     </div>
-   
   );
-}
+};
 export default App;
 
 //  <div className="search-form">
