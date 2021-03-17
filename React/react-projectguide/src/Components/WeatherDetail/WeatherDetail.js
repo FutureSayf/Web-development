@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import {getWeatherData} from '../WeatherInfo/WeatherDetail_Info';
 import './WeatherDetail.css'
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
-const WeatherDetail = ({ city }) => {
+const WeatherDetail = ({ lat, lon }) => {
     const [weatherdata, setWeatherData] = useState(null);
     const [loading, setLoading] = useState(false);
     const getData = async () => {
       try {
-        const data = await getWeatherData(city);
+        const data = await getWeatherData(lat, lon);
         setWeatherData(data);
         console.log(data);
       } catch (error) {
