@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* *{
+  margin: 0;
+  padding: ;
+}
+body{
+  font-family: sans-serif;
+  background: aquamarine;
+  background: -webkit-linear-gradient(to right, aquamarine, #00B19C);
+  background: -webkit-linear-gradient(to right, #A0D9D9, #00B19C);
+} */

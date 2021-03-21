@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {getWeatherData} from '../WeatherInfo/WeatherDetail_Info';
 import './WeatherDetail.css'
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
-const WeatherDetail = ({ lat, lon }) => {
+const WeatherDetail = ({ lat, lon, name }) => {
     const [weatherdata, setWeatherData] = useState(null);
     const [loading, setLoading] = useState(false);
     const getData = async () => {
@@ -17,7 +17,7 @@ const WeatherDetail = ({ lat, lon }) => {
     useEffect(() => {
       getData();
     }, []);
-    // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
+// NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
     const [active, setActive] = useState("");
     
     const Accordion = ({ title, active, setActive }) => {
@@ -69,15 +69,15 @@ const WeatherDetail = ({ lat, lon }) => {
         </div>
       );
     };
-    // ------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------
     return (
       <div className="weatherDetails">
         {weatherdata !== null ? (
           <div>
-            <h3>{weatherdata.timezone}</h3>
+            <h3>{name}</h3>
             {weatherdata.daily.map((datum) => (
               <div>
-                <Accordion title={datum} active={active} setActive={setActive} />
+                <Accordion title={datum} active={active} setActive={setActive}  />
               </div>
             ))}
           </div>
