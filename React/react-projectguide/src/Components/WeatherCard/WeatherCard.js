@@ -38,7 +38,8 @@ const WeatherCard = ({ city }) => {
     getData();
   }, []);
   // ------------------------------------------------------------------------------------------
-  // RETURN WEATHERCARD FUNCTION & WEATHERDETAIL COMPONENT BELOW
+  // RETURN WEATHERCARD FUNCTION & WEATHERDETAIL COMPONENT BELOW 
+  // let x = Math.floor(weatherdata.main.temp);
   return (
 
     <div className="overview">
@@ -47,17 +48,19 @@ const WeatherCard = ({ city }) => {
 
           {weatherdata !== null ? (
             <div className="card" onClick={toggle}>
-               
-              
+                <div className="cardHeader">
+                  <h1>{weatherdata.name}|<span>{weatherdata.sys.country}</span></h1>
+                  <p>{weatherdata.weather[0].main}<span id="spanId">Today</span></p>
+                </div>
                 <div className="icontemp">
                   <img src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}></img>
                   <p id="icontemp">{weatherdata.main.temp}&deg;</p>
                 </div>
-              
                {weatherdata.main.temp > 25 ? (<img src={sun} alt="sun" id="weather-img"/>) :
                weatherdata.weather[0].description.includes("clear sky") ? (<img src={clearSky} alt="helder" id="weather-img"/>) : 
                weatherdata.weather[0].description.includes("few clouds") ? (<img src={fewClouds} alt="few clouds" id="weather-img"/>) :  
-               weatherdata.weather[0].description.includes("scattered clouds") ? (<img src={scatClouds} alt="scattered clouds" id="weather-img"/>) :  
+               weatherdata.weather[0].description.includes("scattered clouds") ? (<img src={scatClouds} alt="scattered clouds" id="weather-img"/>) :
+               weatherdata.weather[0].description.includes("overcast clouds") ? (<img src={brokenClouds} alt="scattered clouds" id="weather-img"/>) :  
                weatherdata.weather[0].description.includes("broken clouds") ? (<img src={brokenClouds} alt="broken clouds" id="weather-img"/>) :  
                weatherdata.weather[0].description.includes("shower rain") ? (<img src={showerRain} alt="shower rain" id="weather-img"/>) :  
                weatherdata.weather[0].description.includes("rain") ? (<img src={rain} alt="rain" id="weather-img"/>) :  
@@ -66,14 +69,7 @@ const WeatherCard = ({ city }) => {
                weatherdata.weather[0].description.includes("mist") ? (<img src={mist} alt="mist" id="weather-img"/>) :  
                ("")}
               <div className="main-container">
-                <h2 className="title">
-                  {weatherdata.name} | {weatherdata.sys.country}
-                </h2>
-                  <img src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}></img>
-                <h3>{weatherdata.weather[0].main}</h3>
-                <div className="temp">
-                  <h4>{weatherdata.main.temp}&deg;C</h4>
-                </div>
+                <div className="designbar"></div>        
                 <div className="temp-range">
                   <h6>
                     min: {weatherdata.main.temp_min}&deg;C || Max:{" "}

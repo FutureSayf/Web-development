@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div className="App">
       <div>hello</div>
-        <WeatherCard city="Amsterdam" />
-        <WeatherCard city="moscow" />
+        <WeatherCard city="Dubai" />
+        <WeatherCard city="Paris" />
     </div>
   );
 };
