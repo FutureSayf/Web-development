@@ -131,6 +131,7 @@
     margin-top: 19px;
   }
   .temp-range{
+    align-items: flex-start;
     margin-top: 180px;
     display: flex;
     flex-direction: column;

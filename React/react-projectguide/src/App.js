@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <div>hello</div>
         <WeatherCard city="Dubai" />
-        <WeatherCard city="Paris" />
+        <WeatherCard city="Amsterdam" />
     </div>
   );
 };
