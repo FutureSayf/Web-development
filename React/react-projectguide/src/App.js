@@ -7,9 +7,13 @@ const App = () => {
   
   return (
     <div className="App">
-      <div>hello</div>
+      <div className="introtext">Dynamic React weatherApp</div>
+        
+        <div className="cards">
+        <WeatherCard city="Miami" />
         <WeatherCard city="Dubai" />
-        <WeatherCard city="Amsterdam" />
+        </div>
+        
     </div>
   );
 };

@@ -1,27 +1,37 @@
 import React, { useState, useEffect } from 'react'
 import {getWeatherData} from '../WeatherInfo/WeatherDetail_Info';
 import './WeatherDetail.css'
+import Clock from 'react-live-clock';
 // FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
 const WeatherDetail = ({ lat, lon, name }) => {
     const [weatherdata, setWeatherData] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const getData = async () => {
-      try {
-        const data = await getWeatherData(lat, lon);
-        setWeatherData(data);
-        console.log(data);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
+    // const [loading, setLoading] = useState(false);
+    
     useEffect(() => {
+      
+      const getData = async () => {
+        try {
+          const data = await getWeatherData(lat, lon);
+          setWeatherData(data);
+          // console.log(data);
+        } catch (error) {
+          console.log(error.message);
+        }
+      };
+
+
+
       getData();
-    }, []);
+    }, [lat, lon]);
+   
+  
 // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
+    
     const [active, setActive] = useState("");
     
     const Accordion = ({ title, active, setActive }) => {
 
+      // let zone = weatherdata.timezone;
       let d = new Date(title.dt * 1000).toLocaleDateString();
       let min = Math.floor(title.temp.min);
       let max = Math.floor(title.temp.max);
@@ -31,12 +41,13 @@ const WeatherDetail = ({ lat, lon, name }) => {
       let night = Math.floor(title.temp.night);
       let icon = (<img className="detail_icon" src={`http://openweathermap.org/img/wn/${title.weather[0].icon}@2x.png`}></img>);
       // console.log(d);
-      // console.log(weatherdata);
+      // console.log(zone);
       return (
         <div className="accordion">
           <div className="accordionHeading">
             <div className="container">
               {d} {icon} {min}/{max}&deg;C
+              <Clock format={'HH:mm:ss'} ticking={true} timezone={weatherdata.timezone} />
               <span onClick={() => setActive(title)}>
                 {active === title ? "X" : "="}
               </span>
@@ -47,7 +58,7 @@ const WeatherDetail = ({ lat, lon, name }) => {
               <table className="table">
                 <thead>
                   <tr>
-                    <th colSpan="2"></th>
+                    <th colSpan="2">{weatherdata.timezone}</th>
                     <th>Morning</th>
                     <th>Afternoon</th>
                     <th>Evening</th>
@@ -87,4 +98,5 @@ const WeatherDetail = ({ lat, lon, name }) => {
     );
   };
   export default WeatherDetail;
+  
  // const weatherIcon = "http://openweathermap.org/img/w/";

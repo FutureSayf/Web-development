@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import { getWeatherData } from "../WeatherInfo/WeatherInfo";
 import WeatherDetail from '../WeatherDetail/WeatherDetail';
 import "./WeatherCard.css";
+import Clock from 'react-live-clock';
+
+import ClockDetail from './Clock';
+
+// import { zone } from '../WeatherDetail/WeatherDetail'
+// console.log({zone});
 
 
 // WEATHER CONDITION iMAGE BELOW
@@ -20,31 +26,47 @@ import mist from '../WeatherCard/Images/mist.jpg';
 const WeatherCard = ({ city }) => {
   const [toggleState, setToggleState] = useState("off");
   const [weatherdata, setWeatherData] = useState(null);
+  
   const [sunRise, setSunRise] = useState({})
+  const [sunSet, setSunSet] = useState({})
+  const [dateTime, setDateTime] = useState({})
   // FUNCTION TOGGLE BELOW FOR TOGGLIN WEATHERDETAIL COMPONENT----------------------------------
   function toggle() {
     setToggleState(toggleState === "off" ? "on" : "off");
   }
   // FUNCTION GETDATA BELOW FOR FETCHING DATA API CALL & KEY------------------------------------
-  const getData = async () => {
-    try {
-      const data = await getWeatherData(city);
-      setWeatherData(data);
-      setSunRise(data.sys.sunrise)
-      // console.log(data);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  
   useEffect(() => {
+    
+    const getData = async () => {
+      try {
+        const data = await getWeatherData(city);
+        setWeatherData(data);
+        setSunRise(data.sys.sunrise)
+        setSunSet(data.sys.sunset)
+        setDateTime(data.dt)
+        console.log(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+
+
+
+
     getData();
-  }, []);
+  }, [city]);
   // ------------------------------------------------------------------------------------------
   // WEATHERCARD FUNCTION BELOW 
   const Card_wrapper = ({ weatherdata }) =>{
 
-    let sunshine = new Date(sunRise * 1000).toLocaleDateString();
-
+    let sunshine = new Date(sunRise * 1000).toLocaleTimeString();
+    let sundown = new Date(sunSet * 1000).toLocaleTimeString();
+    let currentTime = new Date().toLocaleTimeString();
+    // let currentTime = <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Dubai'} />;
+    // let test1 = weatherdata.dt.toLocaleTimeString();
+    let test1 = new Date(dateTime * 1000).toTimeString();
+  
     return (
       <div className="card_wrapper">
 
@@ -71,9 +93,15 @@ const WeatherCard = ({ city }) => {
                weatherdata.weather[0].description.includes("mist") ? (<img src={mist} alt="mist" id="weather-img"/>) :  
                ("")}
               <div className="main-container">
-                <div className="designbar"></div>        
+                <div className="designbar"></div> 
                 <div className="temp-range">
-                  <h5>This {sunshine} weather forecast</h5>
+                  <h6>This {currentTime > "22:00:00" || currentTime < sunshine ? <p>Night</p> : 
+                      currentTime > sunshine && currentTime < "12:00:00" ? <p>Morning</p> : 
+                      currentTime > "12:00:00" && currentTime < sundown ? <p>Afternoon</p> : 
+                      currentTime > sundown && currentTime < "21:59:59" ? <p>Evening</p> : 
+                      ("StandBy")}weather forecast
+                   </h6>
+                   <ClockDetail lat={weatherdata.coord.lat} lon={weatherdata.coord.lon} />
                   <h6>
                     min: {weatherdata.main.temp_min}&deg;C || Max:{" "}
                     {weatherdata.main.temp_max}&deg;C || Humidity:{" "}
@@ -82,13 +110,21 @@ const WeatherCard = ({ city }) => {
                   <p>min:{weatherdata.main.temp_min}&deg;</p>
                   <p>max:{weatherdata.main.temp_max}&deg;</p>
                   <p>Humidity:{weatherdata.main.humidity}%</p>
+                  <h6>{sunshine}/{sundown}/{currentTime}</h6>
+                  <p>{weatherdata.timezone}</p>
+                  {/* <p>{test1}</p> */}
+                  {/* <ClockDetail lat={weatherdata.coord.lat} lon={weatherdata.coord.lon} /> */}
+                  {/* <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Dubai'} /> */}
                 </div>
               </div>
+
+              
             </div>
           ) : null}
       </div>
     );
-  };
+  }; 
+
   // RETURN WEATHERCARD FUNCTION & CARD_WRAPPER & WEATHERDETAIL COMPONENT BELOW
   return (
 
@@ -107,4 +143,4 @@ const WeatherCard = ({ city }) => {
 export default WeatherCard;
 
 
-
+// 
