@@ -16,7 +16,7 @@
     overflow: hidden;
 	/* z-index: 1; */
     /* display: flex; */
-    background-image: url(/Web-development/Sources/portfolio/Pinkpalm.jpg);
+    background-image: url(/Sources/portfolio/Pinkpalm.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -38,7 +38,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-image: url(/Web-development/Sources/portfolio/Pinkpalm.jpg);
+	background-image: url(/Sources/portfolio/Pinkpalm.jpg);
 	/* background-image: url(/Web-development/Sources/portfolio/Graffiti.jpg); */
 	/* opacity: 80%; */
 	background-repeat: no-repeat;
