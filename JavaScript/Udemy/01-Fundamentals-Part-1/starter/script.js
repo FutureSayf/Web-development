@@ -38,11 +38,11 @@ console.log(population > Finland);
 console.log(population < 33);
 const description = "population is " + population + "and its " + population;
 console.log(description);
-*/
 
-//Operator Precedence
-//Coding challange #1
-/*const markHeight = 1.69;
+
+//Operator Precedence/*
+//Coding challange #1*/
+const markHeight = 1.69;
 const markWeight = 78;
 
 const johnHeight = 1.95;
@@ -56,18 +56,16 @@ console.log(johnBMI);
 const markHigerBMI = markBMI > johnBMI;
 console.log(markHigerBMI);
 
-Great Succes!
-*/
+// coding challenge #2
 
-const birthYear = 2031;
-
-let century;
-if (birthYear <= 2000) {
-    console.log(`This is the ${century = 20}`);
+if (markBMI > johnBMI) {
+    console.log(`Marks BMI (${markBMI}) is higher then John's (${johnBMI})`);
 } else {
-    console.log(`Dit is niet de ${century = 20}`);
+    console.log(`John's BMI is Higher`);
 }
 
-console.log(century);
+
+
+
 
 
