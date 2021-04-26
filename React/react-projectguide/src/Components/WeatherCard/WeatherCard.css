@@ -9,6 +9,8 @@
     text-align: center;
     /* background-color: blue; */
     justify-content: center;
+    /* margin-right: 50px; */
+    /* margin-left: -70px; */
 }
 .icontemp{
     background: #00B19C;
@@ -134,5 +136,48 @@
     align-items: flex-start;
     margin-top: 180px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .temp-range h5{
+    font-size: 15px;
+    text-align: right;
+    color: #163d3fc9;
+    /* margin-top: -90px; */
+    margin-left: 100px;
+    font-weight: 200px;
+  }
+  .temp-range p {
+    font-size: 22px;
+  }
+  .weatherInfo{
+    display: flex;
+    text-align: end;
+    /* background-color: rgba(0, 255, 255, 0.329); */
+    width: 100%;
+    margin-top: 15px;
+  }
+  .weatherInfo p{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .maxTemp{
+    /* background-color: blue; */
+    width: 70%;
+    text-align: start;
+    color: rgb(22, 78, 83);
+    margin-left: 5px;
+  }
+  .procent{
+    /* background-color: blueviolet; */
+    width: 30%;
+    margin-right: 5px;
+  }
+  
+  .clock{
+    text-align: right;
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: -77px;
+    margin-right: 5px;
   }

@@ -4,16 +4,16 @@ import WeatherCard from './Components/WeatherCard/WeatherCard'
 
 
 const App = () => {
-  
+
   return (
     <div className="App">
-      <div className="introtext">Dynamic React weatherApp</div>
-        
-        <div className="cards">
-        <WeatherCard city="Miami" />
-        <WeatherCard city="Dubai" />
-        </div>
-        
+      <div className="introtext"><p>Dynamic</p> <p>React</p> <p>weatherApp</p></div>
+
+      {/* <div className="cards"> */}
+      <WeatherCard city="Amsterdam" />
+      <WeatherCard city="Dubai" />
+      {/* </div> */}
+
     </div>
   );
 };
