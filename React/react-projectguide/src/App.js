@@ -11,7 +11,9 @@ const App = () => {
 
       {/* <div className="cards"> */}
       <WeatherCard city="Amsterdam" />
-      <WeatherCard city="Dubai" />
+      <WeatherCard city="Marrakech" />
+      <WeatherCard city="London" />
+      <WeatherCard city="Moscow" />
       {/* </div> */}
 
     </div>
