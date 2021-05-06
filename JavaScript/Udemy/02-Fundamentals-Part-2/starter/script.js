@@ -165,33 +165,63 @@ function logger() {
 // // LinkedIN snipper
 
 
-const voortgangCursus = (module) => Math.round((module / 21) * 100);
+// const voortgangCursus = (module) => Math.round((module / 21) * 100);
 
 
-const checkStatus = (avgStudent) => {
-    const avgStudent = voortgangCursus(5);
+// const checkStatus = (cijfer) => {
+//     const avgStudent = voortgangCursus(cijfer);
 
-    if (avgStudent > 0 && avgStudent < 15) {
-        console.log(`Student heeft ${avgStudent} % af, ga door naar de module Functions`);
-    }
-    else if (avgStudent >= 15 && avgStudent < 40) {
-        console.log(`Student heeft ${avgStudent} % af ga door naar de module Arrays`);
-    }
-    else if (avgStudent >= 40 && avgStudent < 70) {
-        console.log(`Student heeft ${avgStudent} % af ga door naar de module Objects`);
-    }
-    else if (avgStudent >= 70 && avgStudent < 99) {
-        console.log(`Student heeft ${avgStudent}% af ga door naar de coding Challange`);
-    }
-    else if (avgStudent == 100) {
-        console.log(`Gefelicteerd! Student heeft ${avgStudent} % de module is succesvol afgerond`);
-    }
-    else {
-        console.log("Start de module");
-    }
+//     if (avgStudent > 0 && avgStudent < 15) {
+//         console.log(`Student heeft ${avgStudent} % af, ga door naar de module Functions`);
+//     }
+//     else if (avgStudent >= 15 && avgStudent < 40) {
+//         console.log(`Student heeft ${avgStudent} % af ga door naar de module Arrays`);
+//     }
+//     else if (avgStudent >= 40 && avgStudent < 70) {
+//         console.log(`Student heeft ${avgStudent} % af ga door naar de module Objects`);
+//     }
+//     else if (avgStudent >= 70 && avgStudent < 99) {
+//         console.log(`Student heeft ${avgStudent}% af ga door naar de coding Challange`);
+//     }
+//     else if (avgStudent == 100) {
+//         console.log(`Gefelicteerd! Student heeft ${avgStudent} % de module is succesvol afgerond`);
+//     }
+//     else {
+//         console.log("Start de module");
+//     }
 
-}
-checkStatus();
+// }
+// const student1 = checkStatus(10);
+// const student2 = checkStatus(15);
+// const student3 = checkStatus(21);
+// const student4 = checkStatus(0);
+
+// function calcAge(bY, fN) {
+//     const age = 2037 - bY;
+//     console.log(`${fN} is ${age}`);
+//     return age;
+// }
+// const age = calcAge(1991, `Jonas`)
+// console.log(age);
+
 
 
 // IAM_Sayf. & Abdusselam
+const percentageOfWorld = population => Math.round(population / 7900 * 100);
+
+const population = [10, 1441, 332, 83];
+console.log(population.length);
+const percentage = [
+    percentageOfWorld(population[0]),
+    percentageOfWorld(population[1]),
+    percentageOfWorld(population[2]),
+    percentageOfWorld(population[3])
+]
+
+console.log(percentage);
+
+
+// function percentageOfWorld1(country, population) {
+//     const perc = Math.round((population / 7900) * 100);
+//     return `${country} has ${population} Million people, its about ${perc}percent of the world`;
+// }
