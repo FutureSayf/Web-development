@@ -207,21 +207,149 @@ function logger() {
 
 
 // IAM_Sayf. & Abdusselam
-const percentageOfWorld = population => Math.round(population / 7900 * 100);
+// const percentageOfWorld = population => Math.round(population / 7900 * 100);
 
-const population = [10, 1441, 332, 83];
-console.log(population.length);
-const percentage = [
-    percentageOfWorld(population[0]),
-    percentageOfWorld(population[1]),
-    percentageOfWorld(population[2]),
-    percentageOfWorld(population[3])
-]
+// const population = [10, 1441, 332, 83];
+// console.log(population.length);
+// const percentage = [
+//     percentageOfWorld(population[0]),
+//     percentageOfWorld(population[1]),
+//     percentageOfWorld(population[2]),
+//     percentageOfWorld(population[3])
+// ]
 
-console.log(percentage);
+// console.log(percentage);
+// const bills = [125, 555, 44];
 
+// const calcTip = (bills) => {
+//     if (bills >= 50 && bills <= 300) {
+//         const bill = bills * 0.15;
+//         return bill;
+//     } else {
+//         const bill = bills * 0.20;
+//         return bill;
+//     }
 
-// function percentageOfWorld1(country, population) {
-//     const perc = Math.round((population / 7900) * 100);
-//     return `${country} has ${population} Million people, its about ${perc}percent of the world`;
 // }
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tips);
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(total);
+
+
+// console.log(calcTip(...bills));
+
+// const jonas = {
+//     firstName: 'Sayf',
+//     LastName: 'Amian',
+//     age: 2037 - 1982,
+//     job: 'developer',
+//     friends: ['ab', 'yas',],
+// };
+
+// const interestedIn = prompt(`waar ben je geintereseerd in?`)
+// console.log(jonas[interestedIn]);
+
+// jonas.location = 'portugal';
+// jonas['twitter'] = '@jonaschemdtmann';
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} and his best friend is ${jonas.friends[0]}`);
+
+
+// const jonas = {
+//     firstName: 'Sayf',
+//     LastName: 'Amian',
+//     birthYeah: 1991,
+//     job: 'developer',
+//     friends: ['ab', 'yas',],
+//     hasDriversLicense: true
+
+
+
+//     ,
+
+// calcAge: function (birthY) {
+//     return 2037 - birthY;
+// }
+// calcAge: function () {
+//     return 2037 - this.birthYeah;
+// }
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYeah;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers Lincense`
+//     }
+// };
+
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// console.log(jonas.getSummary());
+
+// coding challenge #3 Objects
+
+// const MarkMiller = {
+//     fullName: 'Mark Miller',
+//     mass: 82,
+//     height: 1.65,
+
+//     calcBMI: function () {
+//         this.BMI = Math.round(this.mass / (this.height * this.height));
+//         return this.BMI;
+//     },
+// }
+
+// const JohnSmith = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+
+//     calcBMI: function () {
+//         this.BMI = Math.round(this.mass / (this.height * this.height));
+//         return this.BMI;
+//     }
+// }
+// const BMIMark = MarkMiller.calcBMI();
+// MarkMiller.calcBMI();
+// JohnSmith.calcBMI();
+
+// console.log(MarkMiller.BMI);
+// if (MarkMiller.BMI > JohnSmith.BMI) {
+//     console.log(`${MarkMiller.fullName} BMI ${MarkMiller.BMI}% is higher than ${JohnSmith.fullName} ${JohnSmith.BMI}%!`);
+// } else if (MarkMiller.BMI < JohnSmith.BMI) {
+//     console.log(`${JohnSmith.fullName} BMI ${JohnSmith.BMI} is higher than ${MarkMiller.fullName} ${MarkMiller.BMI}!`);
+// } else {
+//     console.log(`their even!`);
+// }
+
+
+const Ferrari = {
+    model: 'Testarossa',
+    topSpeed: 322,
+    weight: 2000,
+    distance: 100,
+    color: ['Enzo red', 'Speed Yellow'],
+
+    meterSecond: function () {
+        this.Sec = (this.topSpeed * 1000) / 3600;
+        return this.Sec;
+    },
+
+    calcSpeed: function () {
+        this.time = this.distance / this.Sec;
+        // return this.time
+        this.roundTime = Math.round(this.time * 100) / 100;
+        return this.roundTime;
+    }
+}
+
+Ferrari.meterSecond();
+Ferrari.calcSpeed();
+
+// Ferrari.calcSpeed();
+
+console.log(`The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`);
