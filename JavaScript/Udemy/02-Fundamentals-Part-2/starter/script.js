@@ -327,29 +327,80 @@ function logger() {
 // }
 
 
-const Ferrari = {
-    model: 'Testarossa',
-    topSpeed: 322,
-    weight: 2000,
-    distance: 100,
-    color: ['Enzo red', 'Speed Yellow'],
+// const Ferrari = {
+//     model: 'Testarossa',
+//     topSpeed: 322,
+//     weight: 2000,
+//     distance: 100,
+//     color: ['Enzo red', 'Speed Yellow'],
 
-    meterSecond: function () {
-        this.Sec = (this.topSpeed * 1000) / 3600;
-        return this.Sec;
-    },
+//     meterSecond: function () {
+//         this.Sec = (this.topSpeed * 1000) / 3600;
+//         return this.Sec;
+//     },
 
-    calcSpeed: function () {
-        this.time = this.distance / this.Sec;
-        // return this.time
-        this.roundTime = Math.round(this.time * 100) / 100;
-        return this.roundTime;
-    }
-}
+//     calcSpeed: function () {
+//         this.time = this.distance / this.Sec;
+//         this.roundTime = Math.round(this.time * 100) / 100;
+//         return this.roundTime;
+//     }
+// }
 
-Ferrari.meterSecond();
-Ferrari.calcSpeed();
-
+// Ferrari.meterSecond();
 // Ferrari.calcSpeed();
 
-console.log(`The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`);
+
+// console.log(`The Ferrari ${Ferrari.model} has a Topspeed of ${Ferrari.topSpeed} km/h  this means in Max speed it does 100 meters in ${Ferrari.roundTime} seconds.`);
+
+
+// let leeg = [];
+
+
+// for (let i = 0; i < Ferrari.color.length; i++) {
+//     leeg.push(Ferrari.color[i]);
+// }
+
+// console.log(leeg);
+
+// Coding Challenge nr#4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+
+// const calcTip = (bills) => {
+//     if (bills >= 50 && bills <= 300) {
+//         const bill = bills * 0.15;
+//         return bill;
+//     } else {
+//         const bill = bills * 0.20;
+//         return bill;
+//     }
+// }
+// for (i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
+
+// console.log(tips);
+// console.log(totals);
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const sum = [];
+
+// for (i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i]
+//     for (sum = 0; sum.length)
+// }
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+        // sum += arr[i];
+    }
+    console.log(sum);
+    return sum / arr.length;
+}
+console.log(calcAverage(bills));
