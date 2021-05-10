@@ -394,13 +394,28 @@ const totals = [];
 //     for (sum = 0; sum.length)
 // }
 
-const calcAverage = function (arr) {
-    let sum = 0;
+// const calcAverage = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i];
+//         // sum += arr[i];
+//     }
+//     console.log(sum);
+//     return sum / arr.length;
+// }
+// console.log(calcAverage(bills));
+
+// Coding challenge Developer skills 
+
+// const data1 = [17, 21, 23];
+const data2 = [17, 21, 23, -5, 0, 4];
+
+const printForecast = function (arr) {
+    let out = '';
     for (let i = 0; i < arr.length; i++) {
-        sum = sum + arr[i];
-        // sum += arr[i];
+        out = out + `${arr[i]}ºC in ${[i + 1]} days...`;
     }
-    console.log(sum);
-    return sum / arr.length;
+    console.log('...' + out);
 }
-console.log(calcAverage(bills));
+// printForecast(data1);
+printForecast(data2);
