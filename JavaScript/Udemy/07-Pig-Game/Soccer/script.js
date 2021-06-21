@@ -36,6 +36,7 @@ const switchPlayer = function () {
 
 
 };
+
 // ShootButton Functionality
 shootButton.addEventListener("click", function () {
     const randomNumber = Math.trunc(Math.random() * 10) + 1;
@@ -87,6 +88,9 @@ shootButton.addEventListener("click", function () {
 
     }
 });
+
+
+
 // bottom maximum = 495px
 // bottom max = -50px
 

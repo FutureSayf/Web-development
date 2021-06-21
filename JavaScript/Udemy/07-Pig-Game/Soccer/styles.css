@@ -39,7 +39,7 @@
   border-radius: 50px;
   position: absolute;
   bottom: 40px;
-  transition: 500ms;
+  /* transition: 500ms; */
 }
 .game__doel {
   width: 500px;
